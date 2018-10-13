@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ruby Is For Fun</title>
+  <style type="text/css">
+    .btn {
+      display: block;
+      cursor: pointer;
+    }
+
+    .btn2 a {
+      display: block;
+      cursor: pointer;
+      color: silver;
+      padding-top: 1em;
+      text-align: right;
+    }
+
+    .text {
+      display: none;
+      padding: 10px;
+      margin: 10px;
+      border: 1px dashed silver;
+      height: auto;
+    }
+
+    .btn {
+      background: #eee;
+      width: 100%;
+      font-size: 16px;
+      color: rgb(112, 14, 14);
+      padding: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 1 (стр. 10)</div>
+        <div class="text">
+          <p>Задание: заведите блокнот с идеями. Записывайте туда абсолютно все идеи, которые приходят вам в голову.
+            Возможно вы вернетесь к ним через неделю, месяц, или год.</p>
+        </div>
+      </div>
+    </li>
+    <li>      
+      <div class="spoiler">
+        <div class="btn">Задание № 2 (стр. 13)</div>
+        <div class="text">
+          <p>Найти и установить ruby installer</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 3 (стр. 13)</div>
+        <div class="text">
+          <p>Запустите программу “1+1” (без puts).</p>
+        </div>
+      </div>  
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 4 (стр. 14)</div>
+        <div class="text">
+          <p>Написать программу, которая считает количество миллисекунд в сутках</p>
+        </div>
+      </div>       
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 5 (стр. 14)</div>
+        <div class="text">
+          <p>Посчитать количество секунд в сутках, не выводя результат на экран с помощью puts (в irb)</p>
+        </div>
+      </div>       
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 6 (стр. 18)</div>
+        <div class="text">
+          <p>Установить файловый менеджер</p>
+        </div>
+      </div>       
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 7 (стр. 21)</div>
+        <div class="text">
+          <p>“Походите” по вашей файловой системе и посмотрите какие файлы и директории в ней существуют. Директории из корневого каталога (== “директории из корневой директории”) будут часто встречаться в будущем.</p>
+        </div>
+      </div>     
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 8 (стр. 21)</div>
+        <div class="text">
+          <p>Разберитесь с созданием, копированием, переносом файлов и директорий. Попробуйте скопировать несколько файлов, предварительно выделив их (Ins).</p>
+        </div>
+      </div>      
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Задание № 9 (стр. 28)</div>
+        <div class="text">
+          <p>Установить текстовый редактор. Попробовать создать несколько файлов в текстовом редакторе. В каждый файл запишите имя человека, которого вы знаете. Удалите файлы.</p>
+        </div>
+      </div>      
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 1 (стр. 13). puts 1+1</div>
+        <div class="text">
+          <p>puts(1+1)</p>
+          <br>
+          <p>$ ruby</p>
+          <p>puts 1+1</p>
+          <p><b>2</b></p>
+          <p>$</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 2 (стр. 14). Cосчитать количество миллисекунд в сутках</div>
+        <div class="text">
+          <p>$ ruby</p>
+          <p>puts 60 * 60 * 24 * 1000</p>
+          <p>(нажмите Ctrl + D)</p>
+          <p>(нажмите Enter)</p>
+          <p><b>86400000</b></p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 3 (стр. 14). puts 5**5 * 4**4 * 3**3 * 2**2 * 1**1</div>
+        <div class="text">
+          <p>$ ruby</p>
+          <p>puts 5**5 * 4**4 * 3**3 * 2**2 * 1**1</p>
+          <p>(нажмите Ctrl + D)</p>
+          <p>(нажмите Enter)</p>
+          <p><b>86400000</b></p>
+        </div>
+      </div>      
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 4 (стр. 14). puts 60 * 60 * 24 * 1000 == 5**5 * 4**4 * 3**3 * 2**2 * 1**1</div>
+        <div class="text">
+          <p>$ ruby</p>
+          <p>puts 60 * 60 * 24 * 1000 == 5**5 * 4**4 * 3**3 * 2**2 * 1**1</p>
+          <p>(нажмите Ctrl + D)</p>
+          <p>(нажмите Enter)</p>
+          <p>true</p>
+        </div>
+      </div>      
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 5 (стр. 15). Запустить irb и посчитать количество секунд в сутках, не выводя результат на экран с помощью puts.</div>
+        <div class="text">
+          <p>$ irb</p>
+          <p>irb(main):001:0> 60*60*24*1000
+          <p>=> 86400000</p>
+          <p>irb(main):002:0></p>
+        </div>
+      </div>      
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 6 (стр. 28). Первая программа.</div>
+        <div class="text">
+          <p>$ irb</p>
+          <p>irb(main):001:0> 60*60*24*1000
+          <p>=> 86400000</p>
+          <p>irb(main):002:0></p>
+        </div>
+      </div>       
+    </li>
+    <li></li>
+    <li></li>
+  </ul>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $('.spoiler').click(function (event) {
+      if (!$(this).hasClass('active') && !$(this).hasClass('no-toggle')) {
+        $('.spoiler').removeClass('active');
+        $('.text:not(.no-toggle > .text)').slideUp(250);
+      } if (!$(this).hasClass('active') && $(this).hasClass('no-toggle')) {
+        event.preventDefault();
+      } else {
+        $(this).toggleClass('active');
+        $(this).find('.text').slideToggle(250);
+      }
+    });
+  </script>
+</body>
+
+</html>
