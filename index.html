@@ -263,6 +263,69 @@
         </div>
       </div>      
     </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 9 (стр. 31). Программа спрашивает возраст и выводит его на экран.</div>
+        <div class="text">
+          <p>app 3.rb</p>
+          <hr>
+          <pre>
+            # Программа спрашивает возраст и выводит его на экран
+            puts "Your age?"
+            age = gets
+            puts "Your age is"
+            puts age
+          </pre>
+        </div>
+      </div>       
+    </li>
+    <li>
+      <div class="spoiler">
+        <div class="btn">Программа № 10 (стр. 31). Написать программу, которая подряд спрашивает год рождения, место рождения, номер телефона трех клиентов, после чего выводит полученную информацию полностью в виде “карточек” (в англ.языке это бы называлось baseball card, аналогия в русском языке - карточка из картотеки).</div>
+        <div class="text">
+          <p>app 4.rb</p>
+          <hr>
+          <pre>
+          puts "Введите год рождения первого клиента?"
+          year_of_birth_0 = gets
+          #
+          puts "Введите год рождения второго клиента?"
+          year_of_birth_1 = gets
+          #
+          puts "Введите год рождения третьего клиента?"
+          year_of_birth_2 = gets
+          #
+          puts "Введите место рождения первого клиента?"
+          place_of_birth_0 = gets
+          #
+          puts "Введите место рождения второго клиента?"
+          place_of_birth_1 = gets
+          #
+          puts "Введите место рождения третьего клиента?"
+          place_of_birth_2 = gets
+          #
+          puts "Введите телефонный номер первого клиента?"
+          phone_number_0 = gets
+          #
+          puts "Введите телефонный номер второго клиента?"
+          phone_number_1 = gets
+          #
+          puts "Введите телефонный номер третьего клиента?"
+          phone_number_2 = gets
+          #
+          puts "baseball card № 1"
+          puts year_of_birth_0.to_s.chomp + " " + place_of_birth_0.to_s.chomp + " " + phone_number_0.to_s.chomp
+          #
+          puts "baseball card № 2"
+          puts year_of_birth_1.to_s.chomp + " " + place_of_birth_1.to_s.chomp + " " + phone_number_1.to_s.chomp
+          #
+          puts "baseball card № 3"
+          puts year_of_birth_2.to_s.chomp + " " + place_of_birth_2.to_s.chomp + " " + phone_number_2.to_s.chomp
+          gets   
+          </pre>
+        </div>
+      </div>       
+    </li>
   </ul>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
