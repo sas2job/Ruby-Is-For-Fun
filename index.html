@@ -208,6 +208,22 @@
           </div>
         </div>        
       </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 19 (стр. 52)</div>
+          <div class="text">
+            <p>Измените программу из предыдущего задания со следующими условиями: человек берет дом не в рассрочку, а в кредит по ставке 4% годовых на оставшуюся сумму. Для каждого года посчитайте сколько денег нужно заплатить за этот год за использование кредита.</p>
+          </div>
+        </div>          
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 20 (стр. 52)</div>
+          <div class="text">
+            <p>Посчитайте количество денег (total), которые мы заплатим только в виде процентов по кредиту за 30 лет.</p>
+          </div>
+        </div>                  
+      </li>
       <hr>
       <li>
         <div class="spoiler">
@@ -668,6 +684,56 @@
               sum = sum - annual_payment
               puts "За #{i + 1} год осталось заплатить #{sum}"
               end
+          </pre>
+          </div>
+        </div>        
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 25 (стр. 52). По заданию № 19 (стр. 52).</div>
+          <div class="text">
+            <a href="code/app20.rb" download="app20.rb">app 20.rb</a>
+            <hr>
+            <pre>
+              # Известно, что стоимость дома - 500 тысяч долларов. 
+              # Человек берет дом в рассрочку на 30 лет в кредит по ставке 4% годовых на оставшуюся сумму 
+              # Написать программу, которая рассчитывает на каждый год сумму использования кредита.
+
+              sum = 500000
+              annual_payment = 16666
+              annual_percent = 0.04
+              30.times do |i|
+              sum = sum - annual_payment
+              percent = sum * annual_percent
+              puts "За #{i + 1} год осталось заплатить #{annual_payment + percent}"
+              end
+          </pre>
+          </div>
+        </div>        
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 26 (стр. 52). По заданию № 20 (стр. 52).</div>
+          <div class="text">
+            <a href="code/app21.rb" download="app21.rb">app 21.rb</a>
+            <hr>
+            <pre>
+              # Известно, что стоимость дома - 500 тысяч долларов. 
+              # Человек берет дом в рассрочку на 30 лет в кредит по ставке 4% годовых на оставшуюся сумму 
+              # Написать программу, которая считает количество денег (total), которые заплатят только в виде процентов по кредиту за 30 лет.
+
+              sum = 500000
+              annual_payment = 16666
+              annual_percent = 0.04
+              total = 0
+
+              30.times do |i|
+              sum = sum - annual_payment
+              percent = sum * annual_percent
+              total = total + percent
+              end
+
+              puts "За 30 лет сумма процентов по кредиту составит #{total}"
           </pre>
           </div>
         </div>        
