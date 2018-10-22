@@ -224,6 +224,22 @@
           </div>
         </div>                  
       </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 21 (стр. 55)</div>
+          <div class="text">
+            <p>Вывести на экран числа от 50 до 100.</p>
+          </div>
+        </div>        
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 22 (стр. 55)</div>
+          <div class="text">
+            <p>Вывести на экран числа от 50 до 100, и если число четное - рядом с ним написать `true`, если нечетное - `false`.</p>
+          </div>
+        </div>        
+      </li>      
       <hr>
       <li>
         <div class="spoiler">
@@ -713,31 +729,32 @@
       </li>
       <li>
         <div class="spoiler">
-          <div class="btn">Программа № 26 (стр. 52). По заданию № 20 (стр. 52).</div>
+          <div class="btn">Программа № 26 (стр. 55). По заданию № 21 (стр. 55).</div>
           <div class="text">
-            <a href="code/app21.rb" download="app21.rb">app 21.rb</a>
+            <a href="code/app22.rb" download="app22.rb">app 22.rb</a>
             <hr>
             <pre>
-              # Известно, что стоимость дома - 500 тысяч долларов. 
-              # Человек берет дом в рассрочку на 30 лет в кредит по ставке 4% годовых на оставшуюся сумму 
-              # Написать программу, которая считает количество денег (total), которые заплатят только в виде процентов по кредиту за 30 лет.
+              # Вывести на экран числа от 50 до 100
 
-              sum = 500000
-              annual_payment = 16666
-              annual_percent = 0.04
-              total = 0
-
-              30.times do |i|
-              sum = sum - annual_payment
-              percent = sum * annual_percent
-              total = total + percent
-              end
-
-              puts "За 30 лет сумма процентов по кредиту составит #{total}"
+              50.upto(100) { |i| puts "#{i}" }
           </pre>
           </div>
         </div>        
       </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 27 (стр. 55). По заданию № 22 (стр. 55).</div>
+          <div class="text">
+            <a href="code/app23.rb" download="app23.rb">app 23.rb</a>
+            <hr>
+            <pre>
+              # Вывести на экран числа от 50 до 100, и если число четное - рядом с ним написать `true`, если нечетное - `false`.
+
+              50.upto(100) { |i| puts "#{i} - #{i.to_i.even?}" }
+          </pre>
+          </div>
+        </div>        
+      </li>      
     </ul>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
