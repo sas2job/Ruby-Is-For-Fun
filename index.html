@@ -291,7 +291,15 @@
             </table>
           </div>
         </div>        
-      </li>                 
+      </li>  
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 25 (стр. 61)</div>
+          <div class="text">
+            <p>Напишите программу, которая спрашивает логин и пароль пользователя в консоли. Если имя “admin” и пароль “12345”, программа должна выводить на экран “Доступ к банковской ячейке разрешен”.</p>
+          </div>
+        </div>        
+      </li>                       
       <hr>
       <li>
         <div class="spoiler">
@@ -826,7 +834,30 @@
           </pre>
           </div>
         </div>        
-      </li>            
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 28 (стр. 61). По заданию № 25 (стр. 61).</div>
+          <div class="text">
+            <a href="code/app25.rb" download="app25.rb">app 25.rb</a>
+            <hr>
+            <pre>
+              # Напишите программу, которая спрашивает логин и пароль пользователя в консоли. 
+              # Если имя “admin” и пароль “12345”, программа должна выводить на экран “Доступ к банковской ячейке разрешен”.
+
+              puts 'Введите логин?'
+              login = gets.chomp
+              puts 'Введите пароль'
+              password = gets.chomp
+              if login == 'admin' and password == '12345'
+              puts 'Доступ к банковской ячейке разрешен'
+              else
+                puts "Неверный логин и/или пароль"
+              end
+          </pre>
+          </div>
+        </div>        
+      </li>                 
     </ul>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
