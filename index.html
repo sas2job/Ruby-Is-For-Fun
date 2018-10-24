@@ -5,40 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Ruby Is For Fun</title>
-  <style type="text/css">
-    .btn {
-      display: block;
-      cursor: pointer;
-    }
-
-    .btn2 a {
-      display: block;
-      cursor: pointer;
-      color: silver;
-      padding-top: 1em;
-      text-align: right;
-    }
-
-    .text {
-      display: none;
-      padding: 10px;
-      margin: 10px;
-      border: 1px dashed silver;
-      height: auto;
-    }
-
-    .btn {
-      background: #eee;
-      width: 100%;
-      font-size: 16px;
-      color: rgb(112, 14, 14);
-      padding: 10px;
-      font-weight: 600;
-      cursor: pointer;
-      margin-bottom: 15px;
-    }
-  </style>
 </head>
 
 <body>
@@ -239,7 +207,91 @@
             <p>Вывести на экран числа от 50 до 100, и если число четное - рядом с ним написать `true`, если нечетное - `false`.</p>
           </div>
         </div>        
-      </li>      
+      </li>  
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 23 (стр. 58)</div>
+          <div class="text">
+            <p>Попробуйте написать следующие сравнения в REPL и догадаться, каков будет результат для языка руби. Заполните таблицы:</p>
+            <table>
+              <tr>
+                <td>Выражение:</td>
+                <td>1 > 1</td>
+                <td>1 < 1</td>
+                <td>1 >= 2</td>
+                <td>1 == 1</td>
+                <td>1 != 1</td>
+              </tr>
+              <tr>
+                <td>Результат:</td>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td colspan="6"></td>
+              </tr>
+              <tr>
+                <td>Выражение:</td>
+                <td>1 > 2</td>
+                <td>1 < 2</td>
+                <td>1 <= 2</td>
+                <td>1 == 2</td>
+                <td>1 != 2</td>
+              </tr>
+              <tr>
+                <td>Результат:</td>
+                <td>false</td>
+                <td>true</td>
+                <td>true</td>
+                <td>false</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td colspan="6"></td>
+              </tr>
+              <tr>
+                <td>Выражение:</td>
+                <td>true > false</td>
+                <td>false > true</td>
+                <td>false == false</td>
+                <td>false != true</td>
+              </tr>
+              <tr>
+                <td>Результат:</td>
+                <td>[ERROR]</td>
+                <td>[ERROR]</td>
+                <td>true</td>
+                <td>false</td>
+              </tr>              
+            </table>
+          </div>
+        </div>        
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 24 (стр. 61)</div>
+          <div class="text">
+            <p>Попробуйте написать следующие сравнения в REPL и догадаться, каков будет результат для языка руби. Заполните таблицы:</p>
+            <table>
+              <tr>
+                <td>Выражение:</td>
+                <td>0 == 0 && 2 + 2 == 4</td>
+                <td>1 == 2 && 2 == 1</td>
+                <td>1 == 2 || 2 == 1</td>
+              </tr>
+              <tr>
+                <td>Результат:</td>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+              </tr>
+            </table>
+          </div>
+        </div>        
+      </li>                 
       <hr>
       <li>
         <div class="spoiler">
@@ -754,7 +806,27 @@
           </pre>
           </div>
         </div>        
-      </li>      
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 28 (стр. 60). Комбинирование условий.</div>
+          <div class="text">
+            <a href="code/app24.rb" download="app24.rb">app 24.rb</a>
+            <hr>
+            <pre>
+              # Комбинирование условий
+
+              puts 'Сколько вам лет?'
+              age = gets.to_i
+              puts 'Являетесь ли вы членом партии Единая Россия? (y/n)'
+              answer = gets.chomp.downcase
+              if age >= 18 and answer == 'y'
+              puts 'Вход на сайт разрешен'
+              end
+          </pre>
+          </div>
+        </div>        
+      </li>            
     </ul>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

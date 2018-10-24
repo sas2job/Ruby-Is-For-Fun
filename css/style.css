@@ -1,0 +1,37 @@
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid black;
+}
+td {
+  padding: 1em;
+}
+.btn {
+  display: block;
+  cursor: pointer;
+}
+.btn2 a {
+  display: block;
+  cursor: pointer;
+  color: silver;
+  padding-top: 1em;
+  text-align: right;
+}
+.text {
+  display: none;
+  padding: 10px;
+  margin: 10px;
+  border: 1px dashed silver;
+  height: auto;
+}
+.btn {
+  background: #eee;
+  width: 100%;
+  font-size: 16px;
+  color: rgb(112, 14, 14);
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
