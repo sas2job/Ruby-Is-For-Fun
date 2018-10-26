@@ -307,7 +307,15 @@
             <p>Известно, что на Луне продают участки. Любой участок менее 50 квадратных метров стоит 1000 долларов. Участок площадью от 50 до 100 квадратных метров стоит 1500 долларов. От 100 и выше - по 25 долларов за квадратный метр. Напишите программу, которая запрашивает длину и ширину участка и выводит на экран его стоимость.</p>
           </div>
         </div>        
-      </li>                              
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 27 (стр. 61)</div>
+          <div class="text">
+            <p>Напишите программу “иммигрант”. Программа должна задавать следующие вопросы: “У вас есть высшее образование? (y/n)”, “У вас есть опыт работы программистом? (y/n)”, “У вас более трех лет опыта? (y/n)”. За каждый положительный ответ начисляется 1 балл (переменную можно назвать score). Если набралось 2 или более баллов программа должна выводить на экран “Добро пожаловать в США”.</p>
+          </div>
+        </div>        
+      </li>                                    
       <hr>
       <li>
         <div class="spoiler">
@@ -897,7 +905,137 @@
           </pre>
           </div>
         </div>        
-      </li>                       
+      </li>  
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 30 (стр. 61). По заданию № 27 (стр. 61). 1 вариант.</div>
+          <div class="text">
+            <a href="code/app27-1.rb" download="app27-1.rb">app 27-1.rb</a>
+            <hr>
+            <pre>
+              # Напишите программу “иммигрант”. Программа должна задавать следующие вопросы: 
+              # “У вас есть высшее образование? (y/n)”, “У вас есть опыт работы программистом? (y/n)”, 
+              # “У вас более трех лет опыта? (y/n)”. 
+              # За каждый положительный ответ начисляется 1 балл (переменную можно назвать score). 
+              # Если набралось 2 или более баллов программа должна выводить на экран “Добро пожаловать в США”.
+              puts 'У вас есть высшее образование? (y/n)'
+              answer_education = gets.chomp.downcase
+              puts 'У вас есть опыт работы программистом? (y/n)'
+              answer_experience = gets.chomp.downcase
+              puts 'У вас более трех лет опыта? (y/n)'
+              answer_experience_3_years = gets.chomp.downcase
+
+              score = 0
+              if answer_education == 'y'
+                score = score + 1
+              end
+              if answer_experience == 'y'
+                score = score + 1
+              end
+              if answer_experience_3_years == 'y'
+                score = score + 1
+              end
+              puts "#{score}"
+              if score >= 2
+              puts 'Добро пожаловать в США'
+              gets
+              end
+          </pre>
+          </div>
+        </div> 
+        <div class="spoiler">
+          <div class="btn">Программа № 31 (стр. 61). По заданию № 27 (стр. 61). 2 вариант.</div>
+          <div class="text">
+            <a href="code/app27-2.rb" download="app27-2.rb">app 27-2.rb</a>
+            <hr>
+            <pre>
+              questions = ['У вас есть высшее образование? (y/n)',
+                           'У вас есть опыт работы программистом? (y/n)',
+                           'У вас более трех лет опыта? (y/n)']
+              answers = []
+               
+              questions.each do |question|
+                puts question
+                answer = gets.chomp.downcase
+                answers << answer if answer == 'y'
+              end
+               if answers.count >= 2
+                puts 'Добро пожаловать в США'
+              else
+                puts 'Недостаточно положительных ответов'
+              end
+              gets
+          </pre>
+          </div>
+        </div> 
+        <div class="spoiler">
+          <div class="btn">Программа № 32 (стр. 61). По заданию № 27 (стр. 61). 3 вариант.</div>
+          <div class="text">
+            <a href="code/app27-3.rb" download="app27-3.rb">app 27-3.rb</a>
+            <hr>
+            <pre>
+              questions = ['У вас есть высшее образование? (y/n)',
+                           'У вас есть опыт работы программистом? (y/n)',
+                           'У вас более трех лет опыта? (y/n)']
+               
+              answers = 0
+               
+              questions.each do |question|
+                puts question
+                answers += 1 if gets.chomp.casecmp('y').zero?
+              end
+               
+              if answers >= 2
+                puts 'Добро пожаловать в США'
+              else
+                puts 'Недостаточно положительных ответов'
+              end
+              gets
+          </pre>
+          </div>
+        </div>  
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 33 (стр. 62). Некоторые полезные функции языка руби.</div>
+          <div class="text">
+            <a href="code/app28.rb" download="app28.rb">app 28.rb</a>
+            <hr>
+            <pre>
+              puts "Запускаем ракеты..."
+              5.downto(1) do |i|
+              puts "Осталось #{i} секунд"
+              sleep 1
+              end
+              puts "Ба-бах!"
+          </pre>
+          </div>
+        </div>        
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 34 (стр. 62). Генерация случайных чисел.</div>
+          <div class="text">
+            <a href="code/app29.rb" download="app29.rb">app 29.rb</a>
+            <hr>
+            <pre>
+              number = rand(1..10)
+              print 'Привет! Я загадал число от 1 до 10, попробуйте угадать: '
+              loop do
+                input = gets.to_i
+                if input == number
+                puts 'Правильно!'
+                exit
+              end
+
+                if input != number
+                print 'Неправильно, попробуйте еще раз: '
+                end
+              end
+          </pre>
+          </div>
+        </div>        
+      </li>                                      
     </ul>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
