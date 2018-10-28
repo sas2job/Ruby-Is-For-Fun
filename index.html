@@ -356,7 +356,47 @@
 должна выводить на экран “Искомое число меньше вашего ответа”; 2) иначе “Искомое число больше вашего ответа”. Может показаться, что угадать это число невозможно, однако математический расчет показывает, что угадать число в этом случае можно не более, чем за 20 попыток.</p>
           </div>
         </div>        
-      </li>                                                               
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 33 (стр. 71)</div>
+          <div class="text">
+            <p>Запишите следующие примеры при помощи тернарного оператора</p>
+            <p>Пример 1:</p>
+            <pre>
+              <code>
+                if friends_are_also_coming?
+                go_party
+                else
+                stay_home
+                end                
+              </code>
+            </pre>
+            <p>будет:</p>
+            <pre>
+              <code>
+                if friends_are_also_coming? ? go_party : stay_home
+              </code>
+            </pre> 
+            <p>Пример 2:</p> 
+            <pre>
+              <code>
+                if friends_are_also_coming? && !is_it_raining
+                go_party
+                else
+                stay_home
+                end          
+              </code> 
+            </pre>
+            <p>будет:</p>
+            <pre>
+              <code>
+            if friends_are_also_coming? && !is_it_raining ? go_party : stay_home   
+              </code>
+            </pre>
+           </div>
+        </div>        
+      </li>                                                                     
       <hr>
       <li>
         <div class="spoiler">
