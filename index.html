@@ -391,12 +391,28 @@
             <p>будет:</p>
             <pre>
               <code>
-            if friends_are_also_coming? && !is_it_raining ? go_party : stay_home   
+                if friends_are_also_coming? && !is_it_raining ? go_party : stay_home   
               </code>
             </pre>
            </div>
         </div>        
-      </li>                                                                     
+      </li>  
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 34 (стр. 73)</div>
+          <div class="text">
+            <p>С помощью символов “/”, “-”, “\”, “|” сделайте анимацию - индикатор загрузки. Если выводить эти символы по-очереди на одном и том же месте, возникает ощущение вращающегося символа.</p>
+           </div>
+        </div>        
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 35 (стр. 75)</div>
+          <div class="text">
+            <p>напишите метод, который выводит на экран пароль, но в виде звездочек. Например, если пароль “secret”, метод должен вывести “Ваш пароль: ******”.</p>
+           </div>
+        </div>        
+      </li>                                                                               
       <hr>
       <li>
         <div class="spoiler">
@@ -1182,7 +1198,7 @@
       </li>
       <li>
         <div class="spoiler">
-          <div class="btn">Программа № 40 (стр. 69). По заданию № 32 (стр. 69).</div>
+          <div class="btn">Программа № 39 (стр. 69). По заданию № 32 (стр. 69).</div>
           <div class="text">
             <a href="code/app33.rb" download="app33.rb">app 33.rb</a>
             <hr>
@@ -1215,7 +1231,112 @@
           </pre>
           </div>
         </div>         
-      </li>                                         
+      </li>      
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 40 (стр. 70). Тернарный оператор.</div>
+          <div class="text">
+            <a href="code/app34.rb" download="app34.rb">app 34.rb</a>
+            <hr>
+            <pre>
+              puts("Is it raining? (y/n)")
+              x = gets.chomp.downcase
+              x == 'y' ? print('stay_home') : print('go_party')
+          </pre>
+          </div>
+        </div>        
+      </li>      
+  
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 41 (стр. 72). Индикатор форматирования.</div>
+          <div class="text">
+            <a href="code/app35.rb" download="app35.rb">app 35.rb</a>
+            <hr>
+            <pre>
+              print 'Formatting hard drive'
+              100_000.times do
+              print '.'
+              sleep rand(0.05..0.5)
+              end
+          </pre>
+          </div>
+        </div>         
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 42. По заданию № 34 (стр. 73).</div>
+          <div class="text">
+            <a href="code/app36.rb" download="app36.rb">app 36.rb</a>
+            <hr>
+            <pre>
+              x = 0.1
+
+              while true
+                print "/" + "\r"
+                sleep x
+
+                print "-" + "\r"
+                sleep x
+
+                print "\\" + "\r"
+                sleep x
+
+                print "|" + "\r"
+                sleep x
+
+                print "/" + "\r"
+                sleep x
+
+                print "-" + "\r"
+                sleep x
+
+                print "\\" + "\r"
+                sleep x
+
+                print "|" + "\r"
+                sleep x
+              end
+          </pre>
+          </div>
+        </div>         
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 43. Методы.</div>
+          <div class="text">
+            <a href="code/app37.rb" download="app37.rb">app 37.rb</a>
+            <hr>
+            <pre>
+              def get_number(what)
+              print "Введите #{what}: "
+              gets.to_i
+              end
+              age = get_number('возраст')
+              salary = get_number('зарплату')
+              rockets = get_number('количество ракет для запуска')
+          </pre>
+          </div>
+        </div>         
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 44. По заданию № 35 (стр. 75).</div>
+          <div class="text">
+            <a href="code/app38.rb" download="app38.rb">app 38.rb</a>
+            <hr>
+            <pre>
+              def convert_password(password)
+                "*" * password.length
+              end
+
+              puts "Введте ваш пароль: "
+              user_password = STDIN.gets
+              puts "Спасибо ваш пароль защищен #{convert_password(user_password)}"           
+          </pre>
+          </div>
+        </div>         
+      </li>                                                        
     </ul>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
