@@ -25,15 +25,16 @@ end
 # Метод возвращает случайное название города
 def random_city
   dice = rand(1..5)
-  if dice == 1
+  case dice
+    when 1
     'Москва'
-    elsif dice == 2
+    when 2
     'Лос-Анджелес'
-    elsif dice == 3
+    when 3
     'Пекин'
-    elsif dice == 4
+    when 4
     'Лондон'
-    else
+    when 5
     'Сеул'
   end
 end
