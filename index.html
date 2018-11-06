@@ -480,7 +480,7 @@
       </li>
       <li>
         <div class="spoiler">
-          <div class="btn">Задание № 41 (стр. 81)</div>
+          <div class="btn">Задание № 41 (стр. 87)</div>
           <div class="text">
             <p>Добавьте больше условий в игру “Однорукий бандит”, используйте свое воображение.</p>
           </div>
@@ -488,7 +488,7 @@
       </li>
       <li>
         <div class="spoiler">
-          <div class="btn">Задание № 42 (стр. 81)</div>
+          <div class="btn">Задание № 42 (стр. 87)</div>
           <div class="text">
             <p>Если вы используете MacOS то вместо цифр в консоли используйте эмодзи. Пусть каждой цифре соответствует
               определенная картинка. Вы можете найти эмодзи на сайте https://emojipedia.org/ .</p>
@@ -1641,6 +1641,136 @@
                 end
                 stats
                 random_sleep
+              end
+          </pre>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 47. Однорукий бандит</div>
+          <div class="text">
+            <a href="code/app41.rb" download="app41.rb">app 41.rb</a>
+            <hr>
+            <pre>
+              print 'Ваш возраст: '
+              age = gets.to_i
+              
+              if age < 18
+                puts 'Сожалеем, но вам нет 18'
+                exit
+              end
+              
+              balance = 20
+              
+              loop do
+                puts 'Нажмите Enter, чтобы дернуть ручку...'
+                gets
+              
+                x = rand(0..5)
+                y = rand(0..5)
+                z = rand(0..5)
+              
+                puts "Результат: #{x} #{y} #{z}"
+              
+                if x == 0 && y == 0 && z == 0
+                balance = 0
+                puts 'Ваш баланс обнулен'
+                elsif x == 1 && y == 1 && z == 1
+                  balance += 10
+                  puts 'Баланс увеличился на 10 долларов'
+                elsif x == 2 && y == 2 && z == 2
+                  balance += 20
+                  puts 'Баланс увеличился на 20 долларов'
+                else
+                balance -= 0.5
+                puts 'Баланс уменьшился на 50 центов'
+              end
+              
+              puts "Ваш баланс: #{balance} долларов"
+              
+              end
+          </pre>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 48. По заданию № 40 (стр. 87)</div>
+          <div class="text">
+            <a href="code/app43.rb" download="app43.rb">app 43.rb</a>
+            <hr>
+            <pre>
+              print 'Ваш возраст: '
+              age = gets.to_i
+              if age < 18
+                puts 'Сожалеем, но вам нет 18'
+                exit
+              end
+              
+              balance = 20
+              loop do
+                puts 'Нажмите Enter, чтобы дернуть ручку...'
+                gets
+              
+                x = rand(0..5)
+                y = rand(0..5)
+                z = rand(0..5)
+              
+                x.times do |x|
+                  print "Результат: #{x} #{0} #{0}\r"
+                  sleep 0.5
+                end
+              
+                y.times do |y|
+                  print "Результат: #{x} #{y} #{0}\r"
+                  sleep 0.5
+                end
+              
+                z.times do |z|
+                  print "Результат: #{x} #{y} #{z}\r"
+                  sleep 0.5
+                end
+              
+                  puts "Результат: #{x} #{y} #{z}"
+              
+                if x == 0 && y == 0 && z == 0
+                  balance = 0
+                  puts 'Ваш баланс обнулен'
+                elsif x == 1 && y == 1 && z == 1
+                  balance += 10
+                  puts 'Баланс увеличился на 10 долларов'
+                elsif x == 2 && y == 2 && z == 2
+                  balance += 20
+                  puts 'Баланс увеличился на 20 долларов'
+                else
+                  balance -= 0.5
+                  puts 'Баланс уменьшился на 50 центов'
+                end
+              
+                puts "Ваш баланс: #{balance} долларов"
+              
+                if balance == 0
+                  puts 'Игра завершена'
+                  exit
+                end  
+              end
+          </pre>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 49. Анимация счетчика</div>
+          <div class="text">
+            <a href="code/app42.rb" download="app42.rb">app 42.rb</a>
+            <hr>
+            <pre>
+              print 'Введите число: '
+              counter = gets.to_i
+              counter.times do |n|
+                print "#{n}\r"
+                sleep 0.5
               end
           </pre>
           </div>
