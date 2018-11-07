@@ -1776,6 +1776,31 @@
           </div>
         </div>
       </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Программа № 50. Записная книжка</div>
+          <div class="text">
+            <a href="code/app44.rb" download="app44.rb">app 44.rb</a>
+            <hr>
+            <pre>
+              arr = []
+
+              loop do
+                print 'Введите имя и телефон человека (Enter для окончания ввода): '
+                entry = gets.chomp
+                break if entry.empty?
+                arr << entry
+              end
+              
+              puts 'Ваша записная книжка:'
+              
+              arr.each do |element|
+                puts element
+              end
+          </pre>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
