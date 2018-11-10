@@ -35,11 +35,11 @@ end
 def victory?
   robots_left1 = @arr1.count { |x| x > 0 }
   robots_left2 = @arr2.count { |x| x > 0 }
-    if robots_left1 <= 0
+    if robots_left1 < 0
     puts "Команда 2 победила, в команде осталось #{robots_left2} роботов"
     return true
   end
-    if robots_left2 <= 0
+    if robots_left2 < 0
     puts "Команда 1 победила, в команде осталось #{robots_left1} роботов"
     return false
   end
@@ -52,7 +52,7 @@ end
 def stats
   # количество живых роботов для первой и второй команды
   cnt1 = @arr1.count { |x| x > 0 }
-  cnt2 = @arr2.count { |x| x > 1 }
+  cnt2 = @arr2.count { |x| x > 0 }
   puts "\n"
   puts "1-ая команда: #{cnt1} роботов в строю"
   puts "#{@arr1}"
