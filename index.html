@@ -5,12 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Ruby Is For Fun</title>
 </head>
 
 <body>
   <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <h2>Задания из книги "Руби для романтиков"</h2>
+          </div>
+        </div>
+<div class="row">
+  <div class="col-lg-4">
     <ul>
       <li>
         <div class="spoiler">
@@ -52,7 +60,10 @@
             <p>Посчитать количество секунд в сутках, не выводя результат на экран с помощью puts (в irb)</p>
           </div>
         </div>
-      </li>
+      </li></ul>
+  </div>
+  <div class="col-lg-4">
+    <ul>
       <li>
         <div class="spoiler">
           <div class="btn">Задание № 6 (стр. 18)</div>
@@ -96,7 +107,10 @@
               программа выглядела “легче”.</p>
           </div>
         </div>
-      </li>
+      </li></ul>
+  </div>
+  <div class="col-lg-4">
+    <ul>
       <li>
         <div class="spoiler">
           <div class="btn">Задание № 11 (стр. 29)</div>
@@ -147,289 +161,209 @@
             <p>Посмотрите документацию к методу “chomp” и “size” класса String.</p>
           </div>
         </div>
-      </li>
+      </li></ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+      <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <ul>
       <li>
         <div class="spoiler">
           <div class="btn">Задание № 16 (стр. 45)</div>
           <div class="text">
             <p>Напишите программу для подсчета годовой зарплаты. Пользователь вводит размер заработной платы в месяц, а
-              программа выводит размер заработной платы в год. Допустим, что пользователь каждый месяц хочет
-              откладывать 15% своей зарплаты. Измените программу, чтобы она выводила не только размер заработной платы,
-              но и размер отложенных за год средств. Измените программу, чтобы она выводила размер отложенных средств
-              за 5 лет.</p>
+                  программа выводит размер заработной платы в год. Допустим, что пользователь каждый месяц хочет
+                  откладывать 15% своей зарплаты. Измените программу, чтобы она выводила не только размер заработной платы,
+                  но и размер отложенных за год средств. Измените программу, чтобы она выводила размер отложенных средств
+                  за 5 лет.</p>
           </div>
         </div>
       </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 17 (стр. 47)</div>
-          <div class="text">
-            <p>Посмотрите какие еще существуют bang-методы у класса String</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 18 (стр. 52)</div>
-          <div class="text">
-            <p>Известно, что стоимость дома - 500 тысяч долларов. Человек берет дом в рассрочку на 30 лет. Чтобы
-              выплатить дом за 30 лет, нужно платить 16666 долларов в год (это легко посчитать, разделив 500 тысяч на
-              30). Написать программу, которая для каждого года выводит сумму, которую осталось выплатить.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 19 (стр. 52)</div>
-          <div class="text">
-            <p>Измените программу из предыдущего задания со следующими условиями: человек берет дом не в рассрочку, а в
-              кредит по ставке 4% годовых на оставшуюся сумму. Для каждого года посчитайте сколько денег нужно
-              заплатить за этот год за использование кредита.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 20 (стр. 52)</div>
-          <div class="text">
-            <p>Посчитайте количество денег (total), которые мы заплатим только в виде процентов по кредиту за 30 лет.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 21 (стр. 55)</div>
-          <div class="text">
-            <p>Вывести на экран числа от 50 до 100.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 22 (стр. 55)</div>
-          <div class="text">
-            <p>Вывести на экран числа от 50 до 100, и если число четное - рядом с ним написать `true`, если нечетное -
-              `false`.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 23 (стр. 58)</div>
-          <div class="text">
-            <p>Попробуйте написать следующие сравнения в REPL и догадаться, каков будет результат для языка руби.
-              Заполните таблицы:</p>
-            <table>
-              <tr>
-                <td>Выражение:</td>
-                <td>1 > 1</td>
-                <td>1 < 1</td> <td>1 >= 2</td>
-                <td>1 == 1</td>
-                <td>1 != 1</td>
-              </tr>
-              <tr>
-                <td>Результат:</td>
-                <td>false</td>
-                <td>false</td>
-                <td>false</td>
-                <td>true</td>
-                <td>false</td>
-              </tr>
-              <tr>
-                <td colspan="6"></td>
-              </tr>
-              <tr>
-                <td>Выражение:</td>
-                <td>1 > 2</td>
-                <td>1 < 2</td> <td>1 <= 2</td> <td>1 == 2</td>
-                <td>1 != 2</td>
-              </tr>
-              <tr>
-                <td>Результат:</td>
-                <td>false</td>
-                <td>true</td>
-                <td>true</td>
-                <td>false</td>
-                <td>true</td>
-              </tr>
-              <tr>
-                <td colspan="6"></td>
-              </tr>
-              <tr>
-                <td>Выражение:</td>
-                <td>true > false</td>
-                <td>false > true</td>
-                <td>false == false</td>
-                <td>false != true</td>
-              </tr>
-              <tr>
-                <td>Результат:</td>
-                <td>[ERROR]</td>
-                <td>[ERROR]</td>
-                <td>true</td>
-                <td>false</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 24 (стр. 61)</div>
-          <div class="text">
-            <p>Попробуйте написать следующие сравнения в REPL и догадаться, каков будет результат для языка руби.
-              Заполните таблицы:</p>
-            <table>
-              <tr>
-                <td>Выражение:</td>
-                <td>0 == 0 && 2 + 2 == 4</td>
-                <td>1 == 2 && 2 == 1</td>
-                <td>1 == 2 || 2 == 1</td>
-              </tr>
-              <tr>
-                <td>Результат:</td>
-                <td>true</td>
-                <td>false</td>
-                <td>false</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 25 (стр. 61)</div>
-          <div class="text">
-            <p>Напишите программу, которая спрашивает логин и пароль пользователя в консоли. Если имя “admin” и пароль
-              “12345”, программа должна выводить на экран “Доступ к банковской ячейке разрешен”.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 26 (стр. 61)</div>
-          <div class="text">
-            <p>Известно, что на Луне продают участки. Любой участок менее 50 квадратных метров стоит 1000 долларов.
-              Участок площадью от 50 до 100 квадратных метров стоит 1500 долларов. От 100 и выше - по 25 долларов за
-              квадратный метр. Напишите программу, которая запрашивает длину и ширину участка и выводит на экран его
-              стоимость.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 27 (стр. 61)</div>
-          <div class="text">
-            <p>Напишите программу “иммигрант”. Программа должна задавать следующие вопросы: “У вас есть высшее
-              образование? (y/n)”, “У вас есть опыт работы программистом? (y/n)”, “У вас более трех лет опыта? (y/n)”.
-              За каждый положительный ответ начисляется 1 балл (переменную можно назвать score). Если набралось 2 или
-              более баллов программа должна выводить на экран “Добро пожаловать в США”.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 28 (стр. 67)</div>
-          <div class="text">
-            <p>Посмотрите документацию по классу Range</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 29 (стр. 67)</div>
-          <div class="text">
-            <p>Напишите программу, которая будет выводить случайное число от 500 до 510.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 30 (стр. 67)</div>
-          <div class="text">
-            <p>Напишите программу, которая будет выводить случайное число с дробью от 0 до 1.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 31 (стр. 67)</div>
-          <div class="text">
-            <p>Напишите программу, которая будет выводить случайное число с дробью от 2 до 4.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 32 (стр. 69)</div>
-          <div class="text">
-            <p>Измените программу, чтобы она загадывала число от 1 до 1_000_000 (1 миллиона). Чтобы можно было угадать
-              это число, программа должна сравнивать текущий ответ пользователя и искомое число: 1) если ответ
-              пользователя больше, то программа
-              должна выводить на экран “Искомое число меньше вашего ответа”; 2) иначе “Искомое число больше вашего
-              ответа”. Может показаться, что угадать это число невозможно, однако математический расчет показывает, что
-              угадать число в этом случае можно не более, чем за 20 попыток.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 33 (стр. 71)</div>
-          <div class="text">
-            <p>Запишите следующие примеры при помощи тернарного оператора</p>
-            <p>Пример 1:</p>
-            <pre>
-              <code>
-                if friends_are_also_coming?
-                go_party
-                else
-                stay_home
-                end                
-              </code>
-            </pre>
-            <p>будет:</p>
-            <pre>
-              <code>
-                if friends_are_also_coming? ? go_party : stay_home
-              </code>
-            </pre>
-            <p>Пример 2:</p>
-            <pre>
-              <code>
-                if friends_are_also_coming? && !is_it_raining
-                go_party
-                else
-                stay_home
-                end          
-              </code> 
-            </pre>
-            <p>будет:</p>
-            <pre>
-              <code>
-                if friends_are_also_coming? && !is_it_raining ? go_party : stay_home   
-              </code>
-            </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 34 (стр. 73)</div>
-          <div class="text">
-            <p>С помощью символов “/”, “-”, “\”, “|” сделайте анимацию - индикатор загрузки. Если выводить эти символы
-              по-очереди на одном и том же месте, возникает ощущение вращающегося символа.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Задание № 35 (стр. 75)</div>
-          <div class="text">
-            <p>напишите метод, который выводит на экран пароль, но в виде звездочек. Например, если пароль “secret”,
-              метод должен вывести “Ваш пароль: ******”.</p>
-          </div>
-        </div>
-      </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 17 (стр. 47)</div>
+              <div class="text">
+                <p>Посмотрите какие еще существуют bang-методы у класса String</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 18 (стр. 52)</div>
+              <div class="text">
+                <p>Известно, что стоимость дома - 500 тысяч долларов. Человек берет дом в рассрочку на 30 лет. Чтобы
+                  выплатить дом за 30 лет, нужно платить 16666 долларов в год (это легко посчитать, разделив 500 тысяч на
+                  30). Написать программу, которая для каждого года выводит сумму, которую осталось выплатить.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 19 (стр. 52)</div>
+              <div class="text">
+                <p>Измените программу из предыдущего задания со следующими условиями: человек берет дом не в рассрочку, а в
+                  кредит по ставке 4% годовых на оставшуюся сумму. Для каждого года посчитайте сколько денег нужно
+                  заплатить за этот год за использование кредита.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 20 (стр. 52)</div>
+              <div class="text">
+                <p>Посчитайте количество денег (total), которые мы заплатим только в виде процентов по кредиту за 30 лет.</p>
+              </div>
+            </div>
+          </li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <ul>
+        <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 26 (стр. 61)</div>
+              <div class="text">
+                <p>Известно, что на Луне продают участки. Любой участок менее 50 квадратных метров стоит 1000 долларов.
+                  Участок площадью от 50 до 100 квадратных метров стоит 1500 долларов. От 100 и выше - по 25 долларов за
+                  квадратный метр. Напишите программу, которая запрашивает длину и ширину участка и выводит на экран его
+                  стоимость.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 27 (стр. 61)</div>
+              <div class="text">
+                <p>Напишите программу “иммигрант”. Программа должна задавать следующие вопросы: “У вас есть высшее
+                  образование? (y/n)”, “У вас есть опыт работы программистом? (y/n)”, “У вас более трех лет опыта? (y/n)”.
+                  За каждый положительный ответ начисляется 1 балл (переменную можно назвать score). Если набралось 2 или
+                  более баллов программа должна выводить на экран “Добро пожаловать в США”.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 28 (стр. 67)</div>
+              <div class="text">
+                <p>Посмотрите документацию по классу Range</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 29 (стр. 67)</div>
+              <div class="text">
+                <p>Напишите программу, которая будет выводить случайное число от 500 до 510.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 30 (стр. 67)</div>
+              <div class="text">
+                <p>Напишите программу, которая будет выводить случайное число с дробью от 0 до 1.</p>
+              </div>
+            </div>
+          </li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <ul>
+        <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 31 (стр. 67)</div>
+              <div class="text">
+                <p>Напишите программу, которая будет выводить случайное число с дробью от 2 до 4.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 32 (стр. 69)</div>
+              <div class="text">
+                <p>Измените программу, чтобы она загадывала число от 1 до 1_000_000 (1 миллиона). Чтобы можно было угадать
+                  это число, программа должна сравнивать текущий ответ пользователя и искомое число: 1) если ответ
+                  пользователя больше, то программа
+                  должна выводить на экран “Искомое число меньше вашего ответа”; 2) иначе “Искомое число больше вашего
+                  ответа”. Может показаться, что угадать это число невозможно, однако математический расчет показывает, что
+                  угадать число в этом случае можно не более, чем за 20 попыток.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 33 (стр. 71)</div>
+              <div class="text">
+                <p>Запишите следующие примеры при помощи тернарного оператора</p>
+                <p>Пример 1:</p>
+                <pre>
+                  <code>
+                    if friends_are_also_coming?
+                    go_party
+                    else
+                    stay_home
+                    end                
+                  </code>
+                </pre>
+                <p>будет:</p>
+                <pre>
+                  <code>
+                    if friends_are_also_coming? ? go_party : stay_home
+                  </code>
+                </pre>
+                <p>Пример 2:</p>
+                <pre>
+                  <code>
+                    if friends_are_also_coming? && !is_it_raining
+                    go_party
+                    else
+                    stay_home
+                    end          
+                  </code> 
+                </pre>
+                <p>будет:</p>
+                <pre>
+                  <code>
+                    if friends_are_also_coming? && !is_it_raining ? go_party : stay_home   
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 34 (стр. 73)</div>
+              <div class="text">
+                <p>С помощью символов “/”, “-”, “\”, “|” сделайте анимацию - индикатор загрузки. Если выводить эти символы
+                  по-очереди на одном и том же месте, возникает ощущение вращающегося символа.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="spoiler">
+              <div class="btn">Задание № 35 (стр. 75)</div>
+              <div class="text">
+                <p>напишите метод, который выводит на экран пароль, но в виде звездочек. Например, если пароль “secret”,
+                  метод должен вывести “Ваш пароль: ******”.</p>
+              </div>
+            </div>
+          </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <hr>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-lg-4">
+    <ul>
       <li>
         <div class="spoiler">
           <div class="btn">Задание № 36 (стр. 80)</div>
@@ -478,6 +412,10 @@
           </div>
         </div>
       </li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <ul>
       <li>
         <div class="spoiler">
           <div class="btn">Задание № 41 (стр. 87)</div>
@@ -519,6 +457,10 @@
           </div>
         </div>
       </li> 
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <ul>
       <li>
         <div class="spoiler">
           <div class="btn">Задание № 46 (стр. 113)</div>
@@ -533,1568 +475,1766 @@
           <div class="text">
             <p>Создайте массив в 5 строк и 4 столбца, заполните каждую строку случайным значением от 1 до 5 (только одно случайное значение для каждой строки). Пример для массива 2 на 3:</p>
               <pre>
-              [2, 2, 2],
-              [5, 5, 5]
+                [
+                [2, 2, 2],
+                [5, 5, 5]
+                ]
               </pre>
-          </div>
-        </div>
-      </li>                              
-      <hr>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 1 (стр. 13). puts 1+1</div>
-          <div class="text">
-            <p>puts(1+1)</p>
-            <br>
-            <p>$ ruby</p>
-            <p>puts 1+1</p>
-            <p><b>2</b></p>
-            <p>$</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 2 (стр. 14). Cосчитать количество миллисекунд в сутках</div>
-          <div class="text">
-            <p>$ ruby</p>
-            <p>puts 60 * 60 * 24 * 1000</p>
-            <p>(нажмите Ctrl + D)</p>
-            <p>(нажмите Enter)</p>
-            <p><b>86400000</b></p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 3 (стр. 14). puts 5**5 * 4**4 * 3**3 * 2**2 * 1**1</div>
-          <div class="text">
-            <p>$ ruby</p>
-            <p>puts 5**5 * 4**4 * 3**3 * 2**2 * 1**1</p>
-            <p>(нажмите Ctrl + D)</p>
-            <p>(нажмите Enter)</p>
-            <p><b>86400000</b></p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 4 (стр. 14). puts 60 * 60 * 24 * 1000 == 5**5 * 4**4 * 3**3 * 2**2 * 1**1</div>
-          <div class="text">
-            <p>$ ruby</p>
-            <p>puts 60 * 60 * 24 * 1000 == 5**5 * 4**4 * 3**3 * 2**2 * 1**1</p>
-            <p>(нажмите Ctrl + D)</p>
-            <p>(нажмите Enter)</p>
-            <p>true</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 5 (стр. 15). Запустить irb и посчитать количество секунд в сутках, не выводя
-            результат на экран с помощью puts.</div>
-          <div class="text">
-            <p>$ irb</p>
-            <p>irb(main):001:0> 60*60*24*1000</p>
-            <p>=> 86400000</p>
-            <p>irb(main):002:0></p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 6 (стр. 28). Первая программа.</div>
-          <div class="text">
-            <a href="code/app.rb" download="app.rb">app.rb</a>
-            <hr>
-            <p>puts "I would hug you, but I’m just a text"</p>
-            <p>gets</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 7 (стр. 28). Программа для изучения иностранного языка. 3 слова.</div>
-          <div class="text">
-            <a href="code/app1.rb" download="app1.rb">app 1.rb</a>
-            <hr>
-            <p>puts "How to translate ball?"</p>
-            <p>gets</p>
-            <p>puts "How to translate door?"</p>
-            <p>gets</p>
-            <p>puts "How to translate peace?"</p>
-            <p>gets</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 8 (стр. 28). Программа для изучения иностранного языка. 10 слов.</div>
-          <div class="text">
-            <a href="code/app2.rb" download="app2.rb">app 2.rb</a>
-            <hr>
-            <p># encoding: cp866</p>
-            <p>puts "How to translate ball?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate door?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate peace?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate drugs?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate bus?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate sleep?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate took?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate drink?"</p>
-            <p>gets</p>
-            <p>#---------------------------</p>
-            <p>puts "How to translate run?"</p>
-            <p>gets</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 9 (стр. 31). Программа спрашивает возраст и выводит его на экран.</div>
-          <div class="text">
-            <a href="code/app3.rb" download="app3.rb">app 3.rb</a>
-            <hr>
-            <pre>
-            # Программа спрашивает возраст и выводит его на экран
-            puts "Your age?"
-            age = gets
-            puts "Your age is"
-            puts age
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 10 (стр. 31). Написать программу, которая подряд спрашивает год рождения, место
-            рождения, номер телефона трех клиентов, после чего выводит полученную информацию полностью в виде
-            “карточек” (в англ.языке это бы называлось baseball card, аналогия в русском языке - карточка из
-            картотеки).</div>
-          <div class="text">
-            <a href="code/app4.rb" download="app4.rb">app 4.rb</a>
-            <hr>
-            <pre>
-              puts "Введите год рождения первого клиента?"
-              year_of_birth_0 = gets
-              #
-              puts "Введите год рождения второго клиента?"
-              year_of_birth_1 = gets
-              #
-              puts "Введите год рождения третьего клиента?"
-              year_of_birth_2 = gets
-              #
-              puts "Введите место рождения первого клиента?"
-              place_of_birth_0 = gets
-              #
-              puts "Введите место рождения второго клиента?"
-              place_of_birth_1 = gets
-              #
-              puts "Введите место рождения третьего клиента?"
-              place_of_birth_2 = gets
-              #
-              puts "Введите телефонный номер первого клиента?"
-              phone_number_0 = gets
-              #
-              puts "Введите телефонный номер второго клиента?"
-              phone_number_1 = gets
-              #
-              puts "Введите телефонный номер третьего клиента?"
-              phone_number_2 = gets
-              #
-              puts "baseball card № 1"
-              puts year_of_birth_0.to_s.chomp + " " + place_of_birth_0.to_s.chomp + " " + phone_number_0.to_s.chomp
-              #
-              puts "baseball card № 2"
-              puts year_of_birth_1.to_s.chomp + " " + place_of_birth_1.to_s.chomp + " " + phone_number_1.to_s.chomp
-              #
-              puts "baseball card № 3"
-              puts year_of_birth_2.to_s.chomp + " " + place_of_birth_2.to_s.chomp + " " + phone_number_2.to_s.chomp
-              gets   
-            </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 10 (стр. 33). Улучшение программы № 9. Программа спрашивает возраст и выводит
-            его на экран.</div>
-          <div class="text">
-            <a href="code/app5.rb" download="app5.rb">app 5.rb</a>
-            <hr>
-            <pre>
-          # Программа спрашивает возраст и выводит его на экран
-          puts "Your age?"
-          age = gets
-          puts "=" * 80
-          puts "Your age is " + age
-          gets
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 11 (стр. 36), по заданию № 13 (стр. 36).</div>
-          <div class="text">
-            <a href="code/app6.rb" download="app6.rb">app 6.rb</a>
-            <hr>
-            <pre>
-              puts "Тип данных у `""`."
-              puts "".class
-              puts "Тип данных у нуля."
-              puts 0.class
-              puts "Тип данных у минус единицы"
-              puts -1.class
-              puts "тип данных у округленного числа “Пи” 3.14?"
-              puts 3.14.class
-              gets
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 12 (стр. 37). Типы данных.</div>
-          <div class="text">
-            <a href="code/app7.rb" download="app7.rb">app 7.rb</a>
-            <hr>
-            <pre>
-              # 
-              puts "123.is_a?(Integer)?"
-              puts 123.is_a?(Integer)
-              puts "-"*40;
-              puts "123.is_a?(String)";
-              puts 123.is_a?(String)
-              puts "-"*40;
-              puts "blabla"".is_a?(String)"
-              puts "blabla".is_a?(String)
-              puts "-"*40;
-              puts "123.is_a?(Object)"
-              puts 123.is_a?(Object)
-              puts "-"*40;
-              puts "blabla"".is_a?(Object)"
-              puts "blabla".is_a?(Object)
-              puts "-"*40;
-              gets
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 13 (стр. 40). Приведение типов.</div>
-          <div class="text">
-            <a href="code/app8.rb" download="app8.rb">app 8.rb</a>
-            <hr>
-            <pre>
-              # Программа подсчитывает возраст в месяцах
-              puts "Your age?"
-              age = gets
-              age_months = age.to_i * 12
-              puts "Your age is " + age_months.to_s
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 14 (стр. 41). Дробные числа.</div>
-          <div class="text">
-            <a href="code/app9.rb" download="app9.rb">app 9.rb</a>
-            <hr>
-            <pre>
-            # Программа подсчитывает 30% налог на вводимую зарплату
-            puts "Your salary?"
-            salary = gets.to_i
-            tax_rate = 0.3
-            puts "Tax:" 
-            puts salary * tax_rate
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 15 (стр. 42). Интерполяция строк.</div>
-          <div class="text">
-            <a href="code/app10.rb" download="app10.rb">app 10.rb</a>
-            <hr>
-            <pre>
-            puts "Your age?"
-            age = gets.to_i
-            puts "="*80
-            age_months = age * 12
-            puts "Your age is #{age_months}"
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 16 (стр. 43). Интерполяция строк.</div>
-          <div class="text">
-            <a href="code/app11.rb" download="app11.rb">app 11.rb</a>
-            <hr>
-            <pre>
-            puts "Your age?"
-            age = gets.to_i
-            puts "="*80
-            age_months = age * 12
-            puts "Your age is #{age_months}"
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 17 (стр. 45). По заданию № 16.</div>
-          <div class="text">
-            <a href="code/app12.rb" download="app12.rb">app 12.rb</a>
-            <hr>
-            <pre>
-            #
-            puts "Your salary?"
-            salary_month = gets.to_i
-            tax_rate = 0.3
-            tax = salary_month * tax_rate
-            puts "="*80
-            puts "Tax on month: #{salary_month * tax_rate}"
-            annual_salary = (salary_month - tax) * 12
-            puts "Annual salary: #{annual_salary}"
-            puts "Accumulated for the year 15%: #{annual_salary * 0.15}"
-            puts "Accumulated for the 5 years 15%: #{annual_salary * 0.15 * 5}"
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 18 (стр. 46). Преобразование заглавных букв в строчные и их вывод.</div>
-          <div class="text">
-            <a href="code/app13.rb" download="app13.rb">app 13.rb</a>
-            <hr>
-            <pre>
-            #
-            x = 'Я МОЛОДЕЦ'
-            x = x.downcase
-            puts x
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 19 (стр. 47). Преобразование заглавных букв в строчные используя bang! и их
-            вывод.</div>
-          <div class="text">
-            <a href="code/app14.rb" download="app14.rb">app 14.rb</a>
-            <hr>
-            <pre>
-              #Преобразование заглавных букв в строчные используя bang! и их вывод
-              a = 'HI'
-              b = a
-              a.downcase!
-              puts b
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 20 (стр. 48). Запись блока в фигурных скобках.</div>
-          <div class="text">
-            <a href="code/app15.rb" download="app15.rb">app 15.rb</a>
-            <hr>
-            <pre>
-              # Блок с фигурными скобках
-              10.times { puts 'Спартак - чемпион!' }
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 21 (стр. 49). Запись блока с ключевыми словами do - end.</div>
-          <div class="text">
-            <a href="code/app16.rb" download="app16.rb">app 16.rb</a>
-            <hr>
-            <pre>
-              # Блок с ключевыми словами do - end
-              10.times do
-                puts "Спартак - чемпион!"
-                puts "(и Динамо тоже)"
-                end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 22 (стр. 50). Блок с параметром. Накопление суммы.</div>
-          <div class="text">
-            <a href="code/app17.rb" download="app17.rb">app 17.rb</a>
-            <hr>
-            <pre>
-              # Каждый месяц откладывается определенная сумма. 
-              # Программа должна выводить сколько средств будет накоплено в течение следующих 24 месяцев.
-              sum = 0
-              24.times do |i|
-              sum = sum + 500
-              puts "За #{i + 1} месяц у бабушки в сундуке #{sum}"
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 23 (стр. 51). Блок с параметром. Накопление суммы + проценты</div>
-          <div class="text">
-            <a href="code/app18.rb" download="app18.rb">app 18.rb</a>
-            <hr>
-            <pre>
-              # Каждый месяц откладывается определенная сумма. 
-              # Программа должна выводить сколько средств будет накоплено в течение следующих 24 месяцев если каждый месяц начисляется 10%.
-              sum = 0
-              percent = 0
-              24.times do |i|
-              sum = sum + 500 + percent
-              percent = sum * 0.1
-              puts "За #{i + 1} месяц у бабушки в сундуке #{sum + percent}"
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 24 (стр. 52). По заданию № 18 (стр. 52).</div>
-          <div class="text">
-            <a href="code/app19.rb" download="app19.rb">app 19.rb</a>
-            <hr>
-            <pre>
-              # Известно, что стоимость дома - 500 тысяч долларов. 
-              # Человек берет дом в рассрочку на 30 лет. 
-              # Чтобы выплатить дом за 30 лет, нужно платить 16666 долларов в год (это легко посчитать разделив 500 тысяч на 30). 
-              # Написать программу, которая для каждого года выводит сумму, которую осталось выплатить.
-
-              sum = 500000
-              annual_payment = 16666
-              30.times do |i|
-              sum = sum - annual_payment
-              puts "За #{i + 1} год осталось заплатить #{sum}"
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 25 (стр. 52). По заданию № 19 (стр. 52).</div>
-          <div class="text">
-            <a href="code/app20.rb" download="app20.rb">app 20.rb</a>
-            <hr>
-            <pre>
-              # Известно, что стоимость дома - 500 тысяч долларов. 
-              # Человек берет дом в рассрочку на 30 лет в кредит по ставке 4% годовых на оставшуюся сумму 
-              # Написать программу, которая рассчитывает на каждый год сумму использования кредита.
-
-              sum = 500000
-              annual_payment = 16666
-              annual_percent = 0.04
-              30.times do |i|
-              sum = sum - annual_payment
-              percent = sum * annual_percent
-              puts "За #{i + 1} год осталось заплатить #{annual_payment + percent}"
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 26 (стр. 55). По заданию № 21 (стр. 55).</div>
-          <div class="text">
-            <a href="code/app22.rb" download="app22.rb">app 22.rb</a>
-            <hr>
-            <pre>
-              # Вывести на экран числа от 50 до 100
-
-              50.upto(100) { |i| puts "#{i}" }
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 27 (стр. 55). По заданию № 22 (стр. 55).</div>
-          <div class="text">
-            <a href="code/app23.rb" download="app23.rb">app 23.rb</a>
-            <hr>
-            <pre>
-              # Вывести на экран числа от 50 до 100, и если число четное - рядом с ним написать `true`, если нечетное - `false`.
-
-              50.upto(100) { |i| puts "#{i} - #{i.to_i.even?}" }
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 28 (стр. 60). Комбинирование условий.</div>
-          <div class="text">
-            <a href="code/app24.rb" download="app24.rb">app 24.rb</a>
-            <hr>
-            <pre>
-              # Комбинирование условий
-
-              puts 'Сколько вам лет?'
-              age = gets.to_i
-              puts 'Являетесь ли вы членом партии Единая Россия? (y/n)'
-              answer = gets.chomp.downcase
-              if age >= 18 and answer == 'y'
-              puts 'Вход на сайт разрешен'
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 28 (стр. 61). По заданию № 25 (стр. 61).</div>
-          <div class="text">
-            <a href="code/app25.rb" download="app25.rb">app 25.rb</a>
-            <hr>
-            <pre>
-              # Напишите программу, которая спрашивает логин и пароль пользователя в консоли. 
-              # Если имя “admin” и пароль “12345”, программа должна выводить на экран “Доступ к банковской ячейке разрешен”.
-
-              puts 'Введите логин?'
-              login = gets.chomp
-              puts 'Введите пароль'
-              password = gets.chomp
-              if login == 'admin' and password == '12345'
-              puts 'Доступ к банковской ячейке разрешен'
-              else
-                puts "Неверный логин и/или пароль"
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 29 (стр. 61). По заданию № 26 (стр. 61).</div>
-          <div class="text">
-            <a href="code/app26.rb" download="app26.rb">app 26.rb</a>
-            <hr>
-            <pre>
-              # Известно, что на Луне продают участки. 
-              # Любой участок менее 50 квадратных метров стоит 1000 долларов. 
-              # Участок площадью от 50 до 100 квадратных метров стоит 1500 долларов. 
-              # От 100 и выше - по 25 долларов за квадратный метр. 
-              # Напишите программу, которая запрашивает длину и ширину участка и выводит на экран его стоимость.
-
-              puts "Введите длину?"
-              length = gets.to_i
-              puts "Введите ширину"
-              width = gets.to_i
-              square = width * length
-              puts "#{square} M2"
-
-              if square < 50
-              puts "Участок площадью #{square} M2 стоит 1000 долларов"
-              elsif square > 50 && square <= 100   
-              puts "Участок площадью #{square} M2 стоит 1500 долларов" 
-              else 
-                puts "Участок площадью #{square} M2 стоит #{square * 25}"
-              end
-              gets
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 30 (стр. 61). По заданию № 27 (стр. 61). 1 вариант.</div>
-          <div class="text">
-            <a href="code/app27-1.rb" download="app27-1.rb">app 27-1.rb</a>
-            <hr>
-            <pre>
-              # Напишите программу “иммигрант”. Программа должна задавать следующие вопросы: 
-              # “У вас есть высшее образование? (y/n)”, “У вас есть опыт работы программистом? (y/n)”, 
-              # “У вас более трех лет опыта? (y/n)”. 
-              # За каждый положительный ответ начисляется 1 балл (переменную можно назвать score). 
-              # Если набралось 2 или более баллов программа должна выводить на экран “Добро пожаловать в США”.
-              puts 'У вас есть высшее образование? (y/n)'
-              answer_education = gets.chomp.downcase
-              puts 'У вас есть опыт работы программистом? (y/n)'
-              answer_experience = gets.chomp.downcase
-              puts 'У вас более трех лет опыта? (y/n)'
-              answer_experience_3_years = gets.chomp.downcase
-
-              score = 0
-              if answer_education == 'y'
-                score = score + 1
-              end
-              if answer_experience == 'y'
-                score = score + 1
-              end
-              if answer_experience_3_years == 'y'
-                score = score + 1
-              end
-              puts "#{score}"
-              if score >= 2
-              puts 'Добро пожаловать в США'
-              gets
-              end
-          </pre>
-          </div>
-        </div>
-        <div class="spoiler">
-          <div class="btn">Программа № 31 (стр. 61). По заданию № 27 (стр. 61). 2 вариант.</div>
-          <div class="text">
-            <a href="code/app27-2.rb" download="app27-2.rb">app 27-2.rb</a>
-            <hr>
-            <pre>
-              questions = ['У вас есть высшее образование? (y/n)',
-                           'У вас есть опыт работы программистом? (y/n)',
-                           'У вас более трех лет опыта? (y/n)']
-              answers = []
-               
-              questions.each do |question|
-                puts question
-                answer = gets.chomp.downcase
-                answers << answer if answer == 'y'
-              end
-               if answers.count >= 2
-                puts 'Добро пожаловать в США'
-              else
-                puts 'Недостаточно положительных ответов'
-              end
-              gets
-          </pre>
-          </div>
-        </div>
-        <div class="spoiler">
-          <div class="btn">Программа № 32 (стр. 61). По заданию № 27 (стр. 61). 3 вариант.</div>
-          <div class="text">
-            <a href="code/app27-3.rb" download="app27-3.rb">app 27-3.rb</a>
-            <hr>
-            <pre>
-              questions = ['У вас есть высшее образование? (y/n)',
-                           'У вас есть опыт работы программистом? (y/n)',
-                           'У вас более трех лет опыта? (y/n)']
-               
-              answers = 0
-               
-              questions.each do |question|
-                puts question
-                answers += 1 if gets.chomp.casecmp('y').zero?
-              end
-               
-              if answers >= 2
-                puts 'Добро пожаловать в США'
-              else
-                puts 'Недостаточно положительных ответов'
-              end
-              gets
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 33 (стр. 62). Некоторые полезные функции языка руби.</div>
-          <div class="text">
-            <a href="code/app28.rb" download="app28.rb">app 28.rb</a>
-            <hr>
-            <pre>
-              puts "Запускаем ракеты..."
-              5.downto(1) do |i|
-              puts "Осталось #{i} секунд"
-              sleep 1
-              end
-              puts "Ба-бах!"
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 34 по заданию № 29 (стр. 67). Генерация случайных целых чисел.</div>
-          <div class="text">
-            <a href="code/app29.rb" download="app29.rb">app 29.rb</a>
-            <hr>
-            <pre>
-              # Напишите программу, которая будет выводить случайное число от 500 до 510.
-              random = rand(500..510)
-              puts "#{random}"
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 35 по заданию № 30 (стр. 67). Генерация случайных дробных чисел.</div>
-          <div class="text">
-            <a href="code/app30.rb" download="app30.rb">app 30.rb</a>
-            <hr>
-            <pre>
-              # Напишите программу, которая будет выводить случайное число с дробью от 0 до 1.
-              random = rand(0.00..1.00)
-              puts "#{random}"
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 36 по заданию № 31 (стр. 67). Генерация случайных дробных чисел.</div>
-          <div class="text">
-            <a href="code/app31.rb" download="app31.rb">app 31.rb</a>
-            <hr>
-            <pre>
-              # Напишите программу, которая будет выводить случайное число с дробью от 2 до 4.
-              random = rand(2.00..4.00)
-              puts "#{random}"
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 37 (стр. 62). Угадай число. 1 версия.</div>
-          <div class="text">
-            <a href="code/app32-1.rb" download="app31-1.rb">app 32-1.rb</a>
-            <hr>
-            <pre>
-              number = rand(1..10)
-              print 'Привет! Я загадал число от 1 до 10, попробуйте угадать: '
-              loop do
-                input = gets.to_i
-                if input == number
-                  puts 'Правильно!'
-                  exit
-                end
-                if input != number
-                  print 'Неправильно, попробуйте еще раз: '
-                end
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 38 (стр. 62). Угадай число. 2 версия.</div>
-          <div class="text">
-            <a href="code/app32-2.rb" download="app32-2.rb">app 32-2.rb</a>
-            <hr>
-            <pre>
-            number = rand(1..10)
-            print 'Привет! Я загадал число от 1 до 10, попробуйте угадать: '
-            loop do
-              input = gets.to_i
-              if input == number
-                puts 'Правильно!'
-                exit
-                else
-                print 'Неправильно, попробуйте еще раз: '
-              end
-            end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 39 (стр. 69). По заданию № 32 (стр. 69).</div>
-          <div class="text">
-            <a href="code/app33.rb" download="app33.rb">app 33.rb</a>
-            <hr>
-            <pre>
-              # Измените программу, чтобы она загадывала число от 1 до 1_000_000 (1 миллиона). 
-              # Чтобы можно было угадать это число, программа должна сравнивать текущий ответ пользователя и искомое число: 
-              # 1) если ответ пользователя больше, то программа должна выводить на экран “Искомое число меньше вашего ответа”; 
-              # 2) иначе “Искомое число больше вашего ответа”. 
-              # Может показаться, что угадать это число невозможно, 
-              # однако математический расчет показывает, что угадать число в этом случае можно не более, чем за 20 попыток.
-
-              number = rand(1..1000000)
-                i = 0
-              print 'Привет! Я загадал число от 1 до 1000000, попробуйте угадать: '
-              loop do
-                input = gets.to_i
-                if input > number
-                    i += 1
-                  puts 'Искомое число меньше вашего ответа'
-                  elsif input < number
-                    i += 1
-                  print 'Искомое число больше вашего ответа '
-                  else input == number
-                  puts 'Правильно!'
-                  puts "Число попыток: #{i}"
-                end
-              end
-                  
-              gets
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 40 (стр. 70). Тернарный оператор.</div>
-          <div class="text">
-            <a href="code/app34.rb" download="app34.rb">app 34.rb</a>
-            <hr>
-            <pre>
-              puts("Is it raining? (y/n)")
-              x = gets.chomp.downcase
-              x == 'y' ? print('stay_home') : print('go_party')
-          </pre>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 41 (стр. 72). Индикатор форматирования.</div>
-          <div class="text">
-            <a href="code/app35.rb" download="app35.rb">app 35.rb</a>
-            <hr>
-            <pre>
-              print 'Formatting hard drive'
-              100_000.times do
-              print '.'
-              sleep rand(0.05..0.5)
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 42. По заданию № 34 (стр. 73).</div>
-          <div class="text">
-            <a href="code/app36.rb" download="app36.rb">app 36.rb</a>
-            <hr>
-            <pre>
-              x = 0.1
-
-              while true
-                print "/" + "\r"
-                sleep x
-
-                print "-" + "\r"
-                sleep x
-
-                print "\\" + "\r"
-                sleep x
-
-                print "|" + "\r"
-                sleep x
-
-                print "/" + "\r"
-                sleep x
-
-                print "-" + "\r"
-                sleep x
-
-                print "\\" + "\r"
-                sleep x
-
-                print "|" + "\r"
-                sleep x
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 43. Методы.</div>
-          <div class="text">
-            <a href="code/app37.rb" download="app37.rb">app 37.rb</a>
-            <hr>
-            <pre>
-              def get_number(what)
-              print "Введите #{what}: "
-              gets.to_i
-              end
-              age = get_number('возраст')
-              salary = get_number('зарплату')
-              rockets = get_number('количество ракет для запуска')
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 44. По заданию № 35 (стр. 75).</div>
-          <div class="text">
-            <a href="code/app38.rb" download="app38.rb">app 38.rb</a>
-            <hr>
-            <pre>
-              def convert_password(password)
-                "*" * password.length
-              end
-
-              puts "Введте ваш пароль: "
-              user_password = STDIN.gets
-              puts "Спасибо ваш пароль защищен #{convert_password(user_password)}"           
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 45. По заданию № 36 (стр. 80)</div>
-          <div class="text">
-            <a href="code/app39.rb" download="app39.rb">app 39.rb</a>
-            <hr>
-            <pre>
-              ########################################
-              # ОПРЕДЕЛЯЕМ ПЕРЕМЕННЫЕ
-              ########################################
-              @people = 10
-              @machines = 10
-              ########################################
-              # ВСПОМОГАТЕЛЬНЫЕ МЕТОДЫ
-              ########################################
-              # Метод возвращает случайное значение: true или false
-              def luck?
-                rand(0..1) == 1
-              end
-              
-              def boom
-                diff = rand(1..5)
-                if luck?
-                  @machines -= diff
-                  puts "#{diff} машин уничтожено"
-                  else
-                  @people -= diff
-                  puts "#{diff} людей погибло"
-                end
-              end
-              
-              # Метод возвращает случайное название города
-              def random_city
-                dice = rand(1..5)
-                if dice == 1
-                  'Москва'
-                  elsif dice == 2
-                  'Лос-Анджелес'
-                  elsif dice == 3
-                  'Пекин'
-                  elsif dice == 4
-                  'Лондон'
-                  else
-                  'Сеул'
-                end
-              end
-              
-              def random_sleep
-                sleep rand(0.3..1.5)
-              end
-              
-              def stats
-                puts "Осталось #{@people} людей и #{@machines} машин"
-              end
-              
-              ########################################
-              # СОБЫТИЯ
-              ########################################
-              
-              def event1
-                puts "Запущена ракета по городу #{random_city}"
-                random_sleep
-                boom
-              end
-              
-              def event2
-                puts "Применено радиоактивное оружие в городе #{random_city}"
-                random_sleep
-                boom
-              end
-              
-              def event3
-                puts "Группа солдат прорывает оборону противника в городе #{random_city}"
-                random_sleep
-                boom
-              end
-              
-              ########################################
-              # ПРОВЕРКА ПОБЕДЫ
-              ########################################
-              def check_victory?
-                if @people > 0 and @machines <= 0
-                  true and puts("Люди выиграли")
-                  exit
-                  elsif 
-                   @machines > 0 and @people <= 0
-                  true and puts("Машины выиграли")
-                else
-                end
-              end
-              ########################################
-              # ГЛАВНЫЙ ЦИКЛ
-              ########################################
-              loop do
-                if check_victory?
-                  exit
-                end
-                
-                dice = rand(1..3)
-                if dice == 1
-                  event1
-                  elsif dice == 2
-                  event2
-                  elsif dice == 3
-                  event3
-                end
-                stats
-                random_sleep
-              end         
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 46. По заданию № 37 (стр. 80)</div>
-          <div class="text">
-            <a href="code/app40.rb" download="app40.rb">app 40.rb</a>
-            <hr>
-            <pre>
-              ########################################
-              # ОПРЕДЕЛЯЕМ ПЕРЕМЕННЫЕ
-              ########################################
-              @people = 10
-              @machines = 10
-              ########################################
-              # ВСПОМОГАТЕЛЬНЫЕ МЕТОДЫ
-              ########################################
-              # Метод возвращает случайное значение: true или false
-              def luck?
-                rand(0..1) == 1
-              end
-              
-              def boom
-                diff = rand(1..5)
-                if luck?
-                  @machines -= diff
-                  puts "#{diff} машин уничтожено"
-                  else
-                  @people -= diff
-                  puts "#{diff} людей погибло"
-                end
-              end
-              
-              # Метод возвращает случайное название города
-              def random_city
-                dice = rand(1..5)
-                case dice
-                  when 1
-                  'Москва'
-                  when 2
-                  'Лос-Анджелес'
-                  when 3
-                  'Пекин'
-                  when 4
-                  'Лондон'
-                  when 5
-                  'Сеул'
-                end
-              end
-              
-              def random_sleep
-                sleep rand(0.3..1.5)
-              end
-              
-              def stats
-                puts "Осталось #{@people} людей и #{@machines} машин"
-              end
-              
-              ########################################
-              # СОБЫТИЯ
-              ########################################
-              
-              def event1
-                puts "Запущена ракета по городу #{random_city}"
-                random_sleep
-                boom
-              end
-              
-              def event2
-                puts "Применено радиоактивное оружие в городе #{random_city}"
-                random_sleep
-                boom
-              end
-              
-              def event3
-                puts "Группа солдат прорывает оборону противника в городе #{random_city}"
-                random_sleep
-                boom
-              end
-              
-              ########################################
-              # ПРОВЕРКА ПОБЕДЫ
-              ########################################
-              def check_victory?
-                if @people > 0 and @machines <= 0
-                  true and puts("Люди выиграли")
-                  exit
-                  elsif 
-                   @machines > 0 and @people <= 0
-                  true and puts("Машины выиграли")
-                else
-                end
-              end
-              ########################################
-              # ГЛАВНЫЙ ЦИКЛ
-              ########################################
-              loop do
-                if check_victory?
-                  exit
-                end
-                
-                dice = rand(1..3)
-                if dice == 1
-                  event1
-                  elsif dice == 2
-                  event2
-                  elsif dice == 3
-                  event3
-                end
-                stats
-                random_sleep
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 47. Однорукий бандит</div>
-          <div class="text">
-            <a href="code/app41.rb" download="app41.rb">app 41.rb</a>
-            <hr>
-            <pre>
-              print 'Ваш возраст: '
-              age = gets.to_i
-              
-              if age < 18
-                puts 'Сожалеем, но вам нет 18'
-                exit
-              end
-              
-              balance = 20
-              
-              loop do
-                puts 'Нажмите Enter, чтобы дернуть ручку...'
-                gets
-              
-                x = rand(0..5)
-                y = rand(0..5)
-                z = rand(0..5)
-              
-                puts "Результат: #{x} #{y} #{z}"
-              
-                if x == 0 && y == 0 && z == 0
-                balance = 0
-                puts 'Ваш баланс обнулен'
-                elsif x == 1 && y == 1 && z == 1
-                  balance += 10
-                  puts 'Баланс увеличился на 10 долларов'
-                elsif x == 2 && y == 2 && z == 2
-                  balance += 20
-                  puts 'Баланс увеличился на 20 долларов'
-                else
-                balance -= 0.5
-                puts 'Баланс уменьшился на 50 центов'
-              end
-              
-              puts "Ваш баланс: #{balance} долларов"
-              
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 48. По заданию № 40 (стр. 87)</div>
-          <div class="text">
-            <a href="code/app43.rb" download="app43.rb">app 43.rb</a>
-            <hr>
-            <pre>
-              print 'Ваш возраст: '
-              age = gets.to_i
-              if age < 18
-                puts 'Сожалеем, но вам нет 18'
-                exit
-              end
-              
-              balance = 20
-              loop do
-                puts 'Нажмите Enter, чтобы дернуть ручку...'
-                gets
-              
-                x = rand(0..5)
-                y = rand(0..5)
-                z = rand(0..5)
-              
-                x.times do |x|
-                  print "Результат: #{x} #{0} #{0}\r"
-                  sleep 0.5
-                end
-              
-                y.times do |y|
-                  print "Результат: #{x} #{y} #{0}\r"
-                  sleep 0.5
-                end
-              
-                z.times do |z|
-                  print "Результат: #{x} #{y} #{z}\r"
-                  sleep 0.5
-                end
-              
-                  puts "Результат: #{x} #{y} #{z}"
-              
-                if x == 0 && y == 0 && z == 0
-                  balance = 0
-                  puts 'Ваш баланс обнулен'
-                elsif x == 1 && y == 1 && z == 1
-                  balance += 10
-                  puts 'Баланс увеличился на 10 долларов'
-                elsif x == 2 && y == 2 && z == 2
-                  balance += 20
-                  puts 'Баланс увеличился на 20 долларов'
-                else
-                  balance -= 0.5
-                  puts 'Баланс уменьшился на 50 центов'
-                end
-              
-                puts "Ваш баланс: #{balance} долларов"
-              
-                if balance == 0
-                  puts 'Игра завершена'
-                  exit
-                end  
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 49. Анимация счетчика</div>
-          <div class="text">
-            <a href="code/app42.rb" download="app42.rb">app 42.rb</a>
-            <hr>
-            <pre>
-              print 'Введите число: '
-              counter = gets.to_i
-              counter.times do |n|
-                print "#{n}\r"
-                sleep 0.5
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 50. Записная книжка</div>
-          <div class="text">
-            <a href="code/app44.rb" download="app44.rb">app 44.rb</a>
-            <hr>
-            <pre>
-              arr = []
-
-              loop do
-                print 'Введите имя и телефон человека (Enter для окончания ввода): '
-                entry = gets.chomp
-                break if entry.empty?
-                arr << entry
-              end
-              
-              puts 'Ваша записная книжка:'
-              
-              arr.each do |element|
-                puts element
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 51. По заданию № 43 (стр. 98)</div>
-          <div class="text">
-            <a href="code/app45.rb" download="app45.rb">app 45.rb</a>
-            <hr>
-            <pre>
-              ###############################
-              # ОБЪЯВЛЯЕМ МАССИВЫ
-              ###############################
-              # массив для первой команды
-              @arr1 = Array.new(10, 1)
-              # массив для второй команды
-              @arr2 = Array.new(10, 1)
-              
-              ###############################
-              # АТАКА
-              ###############################
-              # Метод принимает массив для атаки
-              def attack(arr)
-                sleep 1 # добавим sleep для красоты
-                i = rand(0..9)
-                if arr[i] == 1
-                  arr[i] = 0
-                  puts "Робот по индексу #{i} уничтожен"
-                  else
-                  puts "Промазали по индексу #{i}"
-                end
-                sleep 1 # еще один sleep для красоты вывода
-              end
-              
-              ###############################
-              # ПРОВЕРКА ПОБЕДЫ
-              ###############################
-              def victory?
-                robots_left1 = @arr1.count { |x| x == 1 }
-                robots_left2 = @arr2.count { |x| x == 1 }
-                  if robots_left1 == 0
-                  puts "Команда 2 победила, в команде осталось #{robots_left2} роботов"
-                  return true
-                end
-                  if robots_left2 == 0
-                  puts "Команда 1 победила, в команде осталось #{robots_left1} роботов"
-                  return false
-                end
-                false
-              end
-              
-              ###############################
-              # СТАТИСТИКА
-              ###############################
-              def stats
-                # количество живых роботов для первой и второй команды
-                cnt1 = @arr1.count { |x| x == 1 }
-                cnt2 = @arr2.count { |x| x == 1 }
-                puts "1-ая команда: #{cnt1} роботов в строю"
-                puts "2-ая команда: #{cnt2} роботов в строю"
-              end
-              
-              ###############################
-              # ГЛАВНЫЙ ЦИКЛ
-              ###############################
-              loop do
-                puts 'Первая команда наносит удар...'
-                attack(@arr2)
-                exit if victory?
-                stats
-                sleep 3
-                puts # пустая строка
-                puts 'Вторая команда наносит удар...'
-                attack(@arr1)
-                exit if victory?
-                stats
-                sleep 3
-                puts # пустая строка
-              end
-          </pre>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="spoiler">
-          <div class="btn">Программа № 52. По заданию № 44 (стр. 100)</div>
-          <div class="text">
-            <a href="code/app46.rb" download="app46.rb">app 46.rb</a>
-            <hr>
-            <pre>
-              ###############################
-              # ОБЪЯВЛЯЕМ МАССИВЫ
-              ###############################
-              # массив для первой команды
-              @arr1 = Array.new(10, 1)
-              # массив для второй команды
-              @arr2 = Array.new(10, 1)
-              
-              ###############################
-              # АТАКА
-              ###############################
-              # Метод принимает массив для атаки
-              def attack(arr)
-                sleep 1 # добавим sleep для красоты
-                i = rand(0..9)
-                if arr[i] == 1
-                  arr[i] = 0
-                  puts "Робот по индексу #{i} уничтожен"
-                  else
-                  puts "Промазали по индексу #{i}"
-                end
-                sleep 1 # еще один sleep для красоты вывода
-              end
-              
-              ###############################
-              # ПРОВЕРКА ПОБЕДЫ
-              ###############################
-              def victory?
-                robots_left1 = @arr1.count { |x| x == 1 }
-                robots_left2 = @arr2.count { |x| x == 1 }
-                  if robots_left1 == 0
-                  puts "Команда 2 победила, в команде осталось #{robots_left2} роботов"
-                  return true
-                end
-                  if robots_left2 == 0
-                  puts "Команда 1 победила, в команде осталось #{robots_left1} роботов"
-                  return false
-                end
-                false
-              end
-              
-              ###############################
-              # СТАТИСТИКА
-              ###############################
-              def stats
-                # количество живых роботов для первой и второй команды
-                cnt1 = @arr1.count { |x| x == 1 }
-                cnt2 = @arr2.count { |x| x == 1 }
-                puts "\n"
-                puts "1-ая команда: #{cnt1} роботов в строю"
-                puts "#{@arr1}"
-                puts "2-ая команда: #{cnt2} роботов в строю"
-                puts "#{@arr2}"
-                
-              end
-              
-              ###############################
-              # ГЛАВНЫЙ ЦИКЛ
-              ###############################
-              loop do
-                puts 'Первая команда наносит удар...'
-                attack(@arr2)
-                exit if victory?
-                stats
-                sleep 3
-                puts # пустая строка
-                puts 'Вторая команда наносит удар...'
-                attack(@arr1)
-                exit if victory?
-                stats
-                sleep 3
-                puts # пустая строка
-              end
-          </pre>
           </div>
         </div>
       </li> 
       <li>
         <div class="spoiler">
-          <div class="btn">Программа № 53. По заданию № 45 (стр. 100)</div>
+          <div class="btn">Задание № 48 (стр. 113)</div>
           <div class="text">
-            <a href="code/app47.rb" download="app47.rb">app 47.rb</a>
-            <hr>
-            <pre>
-              ###############################
-              # ОБЪЯВЛЯЕМ МАССИВЫ
-              ###############################
-              # массив для первой команды
-              @arr1 = Array.new(10, 1)
-              # массив для второй команды
-              @arr2 = Array.new(10, 1)
-              
-              ###############################
-              # АТАКА
-              ###############################
-              # Метод принимает массив для атаки
-              def attack(arr)
-                sleep 1 # добавим sleep для красоты
-                i = rand(0..9)
-                if arr[i] == 1
-                  arr[i] = 0
-                  puts "Робот по индексу #{i} уничтожен"
-                  else
-                  puts "Промазали по индексу #{i}"
-                end
-                sleep 1 # еще один sleep для красоты вывода
-              end
-              
-              ###############################
-              # ПРОВЕРКА ПОБЕДЫ
-              ###############################
-              def victory?
-                robots_left1 = @arr1.count { |x| x == 1 }
-                robots_left2 = @arr2.count { |x| x == 1 }
-                  if robots_left1 == 0
-                  puts "Команда 2 победила, в команде осталось #{robots_left2} роботов"
-                  return true
-                end
-                  if robots_left2 == 0
-                  puts "Команда 1 победила, в команде осталось #{robots_left1} роботов"
-                  return false
-                end
-                false
-              end
-              
-              ###############################
-              # СТАТИСТИКА
-              ###############################
-              def stats
-                # количество живых роботов для первой и второй команды
-                cnt1 = @arr1.count { |x| x == 1 }
-                cnt2 = @arr2.count { |x| x == 1 }
-                puts "\n"
-                puts "1-ая команда: #{cnt1} роботов в строю"
-                puts "#{@arr1}"
-                puts "2-ая команда: #{cnt2} роботов в строю"
-                puts "#{@arr2}"
-                
-              end
-              
-              ###############################
-              # ГЛАВНЫЙ ЦИКЛ
-              ###############################
-              loop do
-                puts 'Первая команда наносит удар...'
-                attack(@arr2)
-                exit if victory?
-                stats
-                sleep 3
-                puts # пустая строка
-                puts 'Вторая команда наносит удар...'
-                attack(@arr1)
-                exit if victory?
-                stats
-                sleep 3
-                puts # пустая строка
-              end
-          </pre>
+            <p>Создайте массив в 4 строки и 5 столбцов, заполните каждую строку случайным
+              значением от 1 до 5 (только одно случайное значение для каждой строки).</p>
           </div>
         </div>
-      </li>                 
+      </li>
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 49 (стр. 113)</div>
+          <div class="text">
+            <p>Создайте массив 5 на 4 и заполните весь массив абсолютно случайными
+              значениями от 0 до 9.</p>
+          </div>
+        </div>
+      </li> 
+      <li>
+        <div class="spoiler">
+          <div class="btn">Задание № 50 (стр. 117)</div>
+          <div class="text">
+            <p>Попробуйте в “pry” вывести поле 10 на 10 для игры в “Морской бой”.</p>
+          </div>
+        </div>
+      </li>     
     </ul>
   </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+        <h2>Программы на ruby</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <ul>
+          <li>
+              <div class="spoiler">
+                <div class="btn">
+                  <div class="spoiler-header">Программа № 1 (стр. 13). <span>puts 1+1</span></div>
+                </div>
+                <div class="text">
+                  <p>puts(1+1)</p>
+                  <br>
+                  <p>$ ruby</p>
+                  <p>puts 1+1</p>
+                  <p><b>2</b></p>
+                  <p>$</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 2 (стр. 14). Cосчитать количество миллисекунд в сутках</div>
+                <div class="text">
+                  <p>$ ruby</p>
+                  <p>puts 60 * 60 * 24 * 1000</p>
+                  <p>(нажмите Ctrl + D)</p>
+                  <p>(нажмите Enter)</p>
+                  <p><b>86400000</b></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 3 (стр. 14). puts 5**5 * 4**4 * 3**3 * 2**2 * 1**1</div>
+                <div class="text">
+                  <p>$ ruby</p>
+                  <p>puts 5**5 * 4**4 * 3**3 * 2**2 * 1**1</p>
+                  <p>(нажмите Ctrl + D)</p>
+                  <p>(нажмите Enter)</p>
+                  <p><b>86400000</b></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 4 (стр. 14). puts 60 * 60 * 24 * 1000 == 5**5 * 4**4 * 3**3 * 2**2 * 1**1</div>
+                <div class="text">
+                  <p>$ ruby</p>
+                  <p>puts 60 * 60 * 24 * 1000 == 5**5 * 4**4 * 3**3 * 2**2 * 1**1</p>
+                  <p>(нажмите Ctrl + D)</p>
+                  <p>(нажмите Enter)</p>
+                  <p>true</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 5 (стр. 15). Запустить irb и посчитать количество секунд в сутках, не выводя
+                  результат на экран с помощью puts.</div>
+                <div class="text">
+                  <p>$ irb</p>
+                  <p>irb(main):001:0> 60*60*24*1000</p>
+                  <p>=> 86400000</p>
+                  <p>irb(main):002:0></p>
+                </div>
+              </div>
+            </li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <ul>
+          <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 6 (стр. 28). Первая программа.</div>
+                <div class="text">
+                  <a href="code/app.rb" download="app.rb">app.rb</a>
+                  <hr>
+                  <p>puts "I would hug you, but I’m just a text"</p>
+                  <p>gets</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 7 (стр. 28). Программа для изучения иностранного языка. 3 слова.</div>
+                <div class="text">
+                  <a href="code/app1.rb" download="app1.rb">app 1.rb</a>
+                  <hr>
+                  <p>puts "How to translate ball?"</p>
+                  <p>gets</p>
+                  <p>puts "How to translate door?"</p>
+                  <p>gets</p>
+                  <p>puts "How to translate peace?"</p>
+                  <p>gets</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 8 (стр. 28). Программа для изучения иностранного языка. 10 слов.</div>
+                <div class="text">
+                  <a href="code/app2.rb" download="app2.rb">app 2.rb</a>
+                  <hr>
+                  <p># encoding: cp866</p>
+                  <p>puts "How to translate ball?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate door?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate peace?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate drugs?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate bus?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate sleep?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate took?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate drink?"</p>
+                  <p>gets</p>
+                  <p>#---------------------------</p>
+                  <p>puts "How to translate run?"</p>
+                  <p>gets</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 9 (стр. 31). Программа спрашивает возраст и выводит его на экран.</div>
+                <div class="text">
+                  <a href="code/app3.rb" download="app3.rb">app 3.rb</a>
+                  <hr>
+                  <pre>
+                  # Программа спрашивает возраст и выводит его на экран
+                  puts "Your age?"
+                  age = gets
+                  puts "Your age is"
+                  puts age
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 10 (стр. 31). Написать программу, которая подряд спрашивает год рождения, место
+                  рождения, номер телефона трех клиентов, после чего выводит полученную информацию полностью в виде
+                  “карточек” (в англ.языке это бы называлось baseball card, аналогия в русском языке - карточка из
+                  картотеки).</div>
+                <div class="text">
+                  <a href="code/app4.rb" download="app4.rb">app 4.rb</a>
+                  <hr>
+                  <pre>
+                    puts "Введите год рождения первого клиента?"
+                    year_of_birth_0 = gets
+                    #
+                    puts "Введите год рождения второго клиента?"
+                    year_of_birth_1 = gets
+                    #
+                    puts "Введите год рождения третьего клиента?"
+                    year_of_birth_2 = gets
+                    #
+                    puts "Введите место рождения первого клиента?"
+                    place_of_birth_0 = gets
+                    #
+                    puts "Введите место рождения второго клиента?"
+                    place_of_birth_1 = gets
+                    #
+                    puts "Введите место рождения третьего клиента?"
+                    place_of_birth_2 = gets
+                    #
+                    puts "Введите телефонный номер первого клиента?"
+                    phone_number_0 = gets
+                    #
+                    puts "Введите телефонный номер второго клиента?"
+                    phone_number_1 = gets
+                    #
+                    puts "Введите телефонный номер третьего клиента?"
+                    phone_number_2 = gets
+                    #
+                    puts "baseball card № 1"
+                    puts year_of_birth_0.to_s.chomp + " " + place_of_birth_0.to_s.chomp + " " + phone_number_0.to_s.chomp
+                    #
+                    puts "baseball card № 2"
+                    puts year_of_birth_1.to_s.chomp + " " + place_of_birth_1.to_s.chomp + " " + phone_number_1.to_s.chomp
+                    #
+                    puts "baseball card № 3"
+                    puts year_of_birth_2.to_s.chomp + " " + place_of_birth_2.to_s.chomp + " " + phone_number_2.to_s.chomp
+                    gets   
+                  </pre>
+                </div>
+              </div>
+            </li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <ul>
+          <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 10 (стр. 33). Улучшение программы № 9. Программа спрашивает возраст и выводит
+                  его на экран.</div>
+                <div class="text">
+                  <a href="code/app5.rb" download="app5.rb">app 5.rb</a>
+                  <hr>
+                  <pre>
+                # Программа спрашивает возраст и выводит его на экран
+                puts "Your age?"
+                age = gets
+                puts "=" * 80
+                puts "Your age is " + age
+                gets
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 11 (стр. 36), по заданию № 13 (стр. 36).</div>
+                <div class="text">
+                  <a href="code/app6.rb" download="app6.rb">app 6.rb</a>
+                  <hr>
+                  <pre>
+                    puts "Тип данных у `""`."
+                    puts "".class
+                    puts "Тип данных у нуля."
+                    puts 0.class
+                    puts "Тип данных у минус единицы"
+                    puts -1.class
+                    puts "тип данных у округленного числа “Пи” 3.14?"
+                    puts 3.14.class
+                    gets
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 12 (стр. 37). Типы данных.</div>
+                <div class="text">
+                  <a href="code/app7.rb" download="app7.rb">app 7.rb</a>
+                  <hr>
+                  <pre>
+                    # 
+                    puts "123.is_a?(Integer)?"
+                    puts 123.is_a?(Integer)
+                    puts "-"*40;
+                    puts "123.is_a?(String)";
+                    puts 123.is_a?(String)
+                    puts "-"*40;
+                    puts "blabla"".is_a?(String)"
+                    puts "blabla".is_a?(String)
+                    puts "-"*40;
+                    puts "123.is_a?(Object)"
+                    puts 123.is_a?(Object)
+                    puts "-"*40;
+                    puts "blabla"".is_a?(Object)"
+                    puts "blabla".is_a?(Object)
+                    puts "-"*40;
+                    gets
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 13 (стр. 40). Приведение типов.</div>
+                <div class="text">
+                  <a href="code/app8.rb" download="app8.rb">app 8.rb</a>
+                  <hr>
+                  <pre>
+                    # Программа подсчитывает возраст в месяцах
+                    puts "Your age?"
+                    age = gets
+                    age_months = age.to_i * 12
+                    puts "Your age is " + age_months.to_s
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 14 (стр. 41). Дробные числа.</div>
+                <div class="text">
+                  <a href="code/app9.rb" download="app9.rb">app 9.rb</a>
+                  <hr>
+                  <pre>
+                  # Программа подсчитывает 30% налог на вводимую зарплату
+                  puts "Your salary?"
+                  salary = gets.to_i
+                  tax_rate = 0.3
+                  puts "Tax:" 
+                  puts salary * tax_rate
+                </pre>
+                </div>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-12">
+          <hr>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <ul>
+          <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 15 (стр. 42). Интерполяция строк.</div>
+                <div class="text">
+                  <a href="code/app10.rb" download="app10.rb">app 10.rb</a>
+                  <hr>
+                  <pre>
+                  puts "Your age?"
+                  age = gets.to_i
+                  puts "="*80
+                  age_months = age * 12
+                  puts "Your age is #{age_months}"
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 16 (стр. 43). Интерполяция строк.</div>
+                <div class="text">
+                  <a href="code/app11.rb" download="app11.rb">app 11.rb</a>
+                  <hr>
+                  <pre>
+                  puts "Your age?"
+                  age = gets.to_i
+                  puts "="*80
+                  age_months = age * 12
+                  puts "Your age is #{age_months}"
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 17 (стр. 45). По заданию № 16.</div>
+                <div class="text">
+                  <a href="code/app12.rb" download="app12.rb">app 12.rb</a>
+                  <hr>
+                  <pre>
+                  #
+                  puts "Your salary?"
+                  salary_month = gets.to_i
+                  tax_rate = 0.3
+                  tax = salary_month * tax_rate
+                  puts "="*80
+                  puts "Tax on month: #{salary_month * tax_rate}"
+                  annual_salary = (salary_month - tax) * 12
+                  puts "Annual salary: #{annual_salary}"
+                  puts "Accumulated for the year 15%: #{annual_salary * 0.15}"
+                  puts "Accumulated for the 5 years 15%: #{annual_salary * 0.15 * 5}"
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 18 (стр. 46). Преобразование заглавных букв в строчные и их вывод.</div>
+                <div class="text">
+                  <a href="code/app13.rb" download="app13.rb">app 13.rb</a>
+                  <hr>
+                  <pre>
+                  #
+                  x = 'Я МОЛОДЕЦ'
+                  x = x.downcase
+                  puts x
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 19 (стр. 47). Преобразование заглавных букв в строчные используя bang! и их
+                  вывод.</div>
+                <div class="text">
+                  <a href="code/app14.rb" download="app14.rb">app 14.rb</a>
+                  <hr>
+                  <pre>
+                    #Преобразование заглавных букв в строчные используя bang! и их вывод
+                    a = 'HI'
+                    b = a
+                    a.downcase!
+                    puts b
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 20 (стр. 48). Запись блока в фигурных скобках.</div>
+                <div class="text">
+                  <a href="code/app15.rb" download="app15.rb">app 15.rb</a>
+                  <hr>
+                  <pre>
+                    # Блок с фигурными скобках
+                    10.times { puts 'Спартак - чемпион!' }
+                </pre>
+                </div>
+              </div>
+            </li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <ul>
+          <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 21 (стр. 49). Запись блока с ключевыми словами do - end.</div>
+                <div class="text">
+                  <a href="code/app16.rb" download="app16.rb">app 16.rb</a>
+                  <hr>
+                  <pre>
+                    # Блок с ключевыми словами do - end
+                    10.times do
+                      puts "Спартак - чемпион!"
+                      puts "(и Динамо тоже)"
+                      end
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 22 (стр. 50). Блок с параметром. Накопление суммы.</div>
+                <div class="text">
+                  <a href="code/app17.rb" download="app17.rb">app 17.rb</a>
+                  <hr>
+                  <pre>
+                    # Каждый месяц откладывается определенная сумма. 
+                    # Программа должна выводить сколько средств будет накоплено в течение следующих 24 месяцев.
+                    sum = 0
+                    24.times do |i|
+                    sum = sum + 500
+                    puts "За #{i + 1} месяц у бабушки в сундуке #{sum}"
+                    end
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 23 (стр. 51). Блок с параметром. Накопление суммы + проценты</div>
+                <div class="text">
+                  <a href="code/app18.rb" download="app18.rb">app 18.rb</a>
+                  <hr>
+                  <pre>
+                    # Каждый месяц откладывается определенная сумма. 
+                    # Программа должна выводить сколько средств будет накоплено в течение следующих 24 месяцев если каждый месяц начисляется 10%.
+                    sum = 0
+                    percent = 0
+                    24.times do |i|
+                    sum = sum + 500 + percent
+                    percent = sum * 0.1
+                    puts "За #{i + 1} месяц у бабушки в сундуке #{sum + percent}"
+                    end
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 24 (стр. 52). По заданию № 18 (стр. 52).</div>
+                <div class="text">
+                  <a href="code/app19.rb" download="app19.rb">app 19.rb</a>
+                  <hr>
+                  <pre>
+                    # Известно, что стоимость дома - 500 тысяч долларов. 
+                    # Человек берет дом в рассрочку на 30 лет. 
+                    # Чтобы выплатить дом за 30 лет, нужно платить 16666 долларов в год (это легко посчитать разделив 500 тысяч на 30). 
+                    # Написать программу, которая для каждого года выводит сумму, которую осталось выплатить.
+      
+                    sum = 500000
+                    annual_payment = 16666
+                    30.times do |i|
+                    sum = sum - annual_payment
+                    puts "За #{i + 1} год осталось заплатить #{sum}"
+                    end
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 25 (стр. 52). По заданию № 19 (стр. 52).</div>
+                <div class="text">
+                  <a href="code/app20.rb" download="app20.rb">app 20.rb</a>
+                  <hr>
+                  <pre>
+                    # Известно, что стоимость дома - 500 тысяч долларов. 
+                    # Человек берет дом в рассрочку на 30 лет в кредит по ставке 4% годовых на оставшуюся сумму 
+                    # Написать программу, которая рассчитывает на каждый год сумму использования кредита.
+      
+                    sum = 500000
+                    annual_payment = 16666
+                    annual_percent = 0.04
+                    30.times do |i|
+                    sum = sum - annual_payment
+                    percent = sum * annual_percent
+                    puts "За #{i + 1} год осталось заплатить #{annual_payment + percent}"
+                    end
+                </pre>
+                </div>
+              </div>
+            </li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <ul>
+          <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 26 (стр. 55). По заданию № 21 (стр. 55).</div>
+                <div class="text">
+                  <a href="code/app22.rb" download="app22.rb">app 22.rb</a>
+                  <hr>
+                  <pre>
+                    # Вывести на экран числа от 50 до 100
+      
+                    50.upto(100) { |i| puts "#{i}" }
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 27 (стр. 55). По заданию № 22 (стр. 55).</div>
+                <div class="text">
+                  <a href="code/app23.rb" download="app23.rb">app 23.rb</a>
+                  <hr>
+                  <pre>
+                    # Вывести на экран числа от 50 до 100, и если число четное - рядом с ним написать `true`, если нечетное - `false`.
+      
+                    50.upto(100) { |i| puts "#{i} - #{i.to_i.even?}" }
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 28 (стр. 60). Комбинирование условий.</div>
+                <div class="text">
+                  <a href="code/app24.rb" download="app24.rb">app 24.rb</a>
+                  <hr>
+                  <pre>
+                    # Комбинирование условий
+      
+                    puts 'Сколько вам лет?'
+                    age = gets.to_i
+                    puts 'Являетесь ли вы членом партии Единая Россия? (y/n)'
+                    answer = gets.chomp.downcase
+                    if age >= 18 and answer == 'y'
+                    puts 'Вход на сайт разрешен'
+                    end
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 28 (стр. 61). По заданию № 25 (стр. 61).</div>
+                <div class="text">
+                  <a href="code/app25.rb" download="app25.rb">app 25.rb</a>
+                  <hr>
+                  <pre>
+                    # Напишите программу, которая спрашивает логин и пароль пользователя в консоли. 
+                    # Если имя “admin” и пароль “12345”, программа должна выводить на экран “Доступ к банковской ячейке разрешен”.
+      
+                    puts 'Введите логин?'
+                    login = gets.chomp
+                    puts 'Введите пароль'
+                    password = gets.chomp
+                    if login == 'admin' and password == '12345'
+                    puts 'Доступ к банковской ячейке разрешен'
+                    else
+                      puts "Неверный логин и/или пароль"
+                    end
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 29 (стр. 61). По заданию № 26 (стр. 61).</div>
+                <div class="text">
+                  <a href="code/app26.rb" download="app26.rb">app 26.rb</a>
+                  <hr>
+                  <pre>
+                    # Известно, что на Луне продают участки. 
+                    # Любой участок менее 50 квадратных метров стоит 1000 долларов. 
+                    # Участок площадью от 50 до 100 квадратных метров стоит 1500 долларов. 
+                    # От 100 и выше - по 25 долларов за квадратный метр. 
+                    # Напишите программу, которая запрашивает длину и ширину участка и выводит на экран его стоимость.
+      
+                    puts "Введите длину?"
+                    length = gets.to_i
+                    puts "Введите ширину"
+                    width = gets.to_i
+                    square = width * length
+                    puts "#{square} M2"
+      
+                    if square < 50
+                    puts "Участок площадью #{square} M2 стоит 1000 долларов"
+                    elsif square > 50 && square <= 100   
+                    puts "Участок площадью #{square} M2 стоит 1500 долларов" 
+                    else 
+                      puts "Участок площадью #{square} M2 стоит #{square * 25}"
+                    end
+                    gets
+                </pre>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="spoiler">
+                <div class="btn">Программа № 30 (стр. 61). По заданию № 27 (стр. 61). 1 вариант.</div>
+                <div class="text">
+                  <a href="code/app27-1.rb" download="app27-1.rb">app 27-1.rb</a>
+                  <hr>
+                  <pre>
+                    # Напишите программу “иммигрант”. Программа должна задавать следующие вопросы: 
+                    # “У вас есть высшее образование? (y/n)”, “У вас есть опыт работы программистом? (y/n)”, 
+                    # “У вас более трех лет опыта? (y/n)”. 
+                    # За каждый положительный ответ начисляется 1 балл (переменную можно назвать score). 
+                    # Если набралось 2 или более баллов программа должна выводить на экран “Добро пожаловать в США”.
+                    puts 'У вас есть высшее образование? (y/n)'
+                    answer_education = gets.chomp.downcase
+                    puts 'У вас есть опыт работы программистом? (y/n)'
+                    answer_experience = gets.chomp.downcase
+                    puts 'У вас более трех лет опыта? (y/n)'
+                    answer_experience_3_years = gets.chomp.downcase
+      
+                    score = 0
+                    if answer_education == 'y'
+                      score = score + 1
+                    end
+                    if answer_experience == 'y'
+                      score = score + 1
+                    end
+                    if answer_experience_3_years == 'y'
+                      score = score + 1
+                    end
+                    puts "#{score}"
+                    if score >= 2
+                    puts 'Добро пожаловать в США'
+                    gets
+                    end
+                </pre>
+                </div>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-12">
+          <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <ul>
+            <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 31 (стр. 61). По заданию № 27 (стр. 61). 2 вариант.</div>
+                  <div class="text">
+                    <a href="code/app27-2.rb" download="app27-2.rb">app 27-2.rb</a>
+                    <hr>
+                    <pre>
+                      questions = ['У вас есть высшее образование? (y/n)',
+                                   'У вас есть опыт работы программистом? (y/n)',
+                                   'У вас более трех лет опыта? (y/n)']
+                      answers = []
+                       
+                      questions.each do |question|
+                        puts question
+                        answer = gets.chomp.downcase
+                        answers << answer if answer == 'y'
+                      end
+                       if answers.count >= 2
+                        puts 'Добро пожаловать в США'
+                      else
+                        puts 'Недостаточно положительных ответов'
+                      end
+                      gets
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                        <div class="btn">Программа № 32 (стр. 61). По заданию № 27 (стр. 61). 3 вариант.</div>
+                        <div class="text">
+                          <a href="code/app27-3.rb" download="app27-3.rb">app 27-3.rb</a>
+                          <hr>
+                          <pre>
+                            questions = ['У вас есть высшее образование? (y/n)',
+                                         'У вас есть опыт работы программистом? (y/n)',
+                                         'У вас более трех лет опыта? (y/n)']
+                             
+                            answers = 0
+                             
+                            questions.each do |question|
+                              puts question
+                              answers += 1 if gets.chomp.casecmp('y').zero?
+                            end
+                             
+                            if answers >= 2
+                              puts 'Добро пожаловать в США'
+                            else
+                              puts 'Недостаточно положительных ответов'
+                            end
+                            gets
+                        </pre>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="spoiler">
+                        <div class="btn">Программа № 33 (стр. 62). Некоторые полезные функции языка руби.</div>
+                        <div class="text">
+                          <a href="code/app28.rb" download="app28.rb">app 28.rb</a>
+                          <hr>
+                          <pre>
+                            puts "Запускаем ракеты..."
+                            5.downto(1) do |i|
+                            puts "Осталось #{i} секунд"
+                            sleep 1
+                            end
+                            puts "Ба-бах!"
+                        </pre>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="spoiler">
+                        <div class="btn">Программа № 34 по заданию № 29 (стр. 67). Генерация случайных целых чисел.</div>
+                        <div class="text">
+                          <a href="code/app29.rb" download="app29.rb">app 29.rb</a>
+                          <hr>
+                          <pre>
+                            # Напишите программу, которая будет выводить случайное число от 500 до 510.
+                            random = rand(500..510)
+                            puts "#{random}"
+                        </pre>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="spoiler">
+                        <div class="btn">Программа № 35 по заданию № 30 (стр. 67). Генерация случайных дробных чисел.</div>
+                        <div class="text">
+                          <a href="code/app30.rb" download="app30.rb">app 30.rb</a>
+                          <hr>
+                          <pre>
+                            # Напишите программу, которая будет выводить случайное число с дробью от 0 до 1.
+                            random = rand(0.00..1.00)
+                            puts "#{random}"
+                        </pre>
+                        </div>
+                      </div>
+                    </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+            <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 36 по заданию № 31 (стр. 67). Генерация случайных дробных чисел.</div>
+                  <div class="text">
+                    <a href="code/app31.rb" download="app31.rb">app 31.rb</a>
+                    <hr>
+                    <pre>
+                      # Напишите программу, которая будет выводить случайное число с дробью от 2 до 4.
+                      random = rand(2.00..4.00)
+                      puts "#{random}"
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 37 (стр. 62). Угадай число. 1 версия.</div>
+                  <div class="text">
+                    <a href="code/app32-1.rb" download="app31-1.rb">app 32-1.rb</a>
+                    <hr>
+                    <pre>
+                      number = rand(1..10)
+                      print 'Привет! Я загадал число от 1 до 10, попробуйте угадать: '
+                      loop do
+                        input = gets.to_i
+                        if input == number
+                          puts 'Правильно!'
+                          exit
+                        end
+                        if input != number
+                          print 'Неправильно, попробуйте еще раз: '
+                        end
+                      end
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 38 (стр. 62). Угадай число. 2 версия.</div>
+                  <div class="text">
+                    <a href="code/app32-2.rb" download="app32-2.rb">app 32-2.rb</a>
+                    <hr>
+                    <pre>
+                    number = rand(1..10)
+                    print 'Привет! Я загадал число от 1 до 10, попробуйте угадать: '
+                    loop do
+                      input = gets.to_i
+                      if input == number
+                        puts 'Правильно!'
+                        exit
+                        else
+                        print 'Неправильно, попробуйте еще раз: '
+                      end
+                    end
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 39 (стр. 69). По заданию № 32 (стр. 69).</div>
+                  <div class="text">
+                    <a href="code/app33.rb" download="app33.rb">app 33.rb</a>
+                    <hr>
+                    <pre>
+                      # Измените программу, чтобы она загадывала число от 1 до 1_000_000 (1 миллиона). 
+                      # Чтобы можно было угадать это число, программа должна сравнивать текущий ответ пользователя и искомое число: 
+                      # 1) если ответ пользователя больше, то программа должна выводить на экран “Искомое число меньше вашего ответа”; 
+                      # 2) иначе “Искомое число больше вашего ответа”. 
+                      # Может показаться, что угадать это число невозможно, 
+                      # однако математический расчет показывает, что угадать число в этом случае можно не более, чем за 20 попыток.
+        
+                      number = rand(1..1000000)
+                        i = 0
+                      print 'Привет! Я загадал число от 1 до 1000000, попробуйте угадать: '
+                      loop do
+                        input = gets.to_i
+                        if input > number
+                            i += 1
+                          puts 'Искомое число меньше вашего ответа'
+                          elsif input < number
+                            i += 1
+                          print 'Искомое число больше вашего ответа '
+                          else input == number
+                          puts 'Правильно!'
+                          puts "Число попыток: #{i}"
+                        end
+                      end
+                          
+                      gets
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 40 (стр. 70). Тернарный оператор.</div>
+                  <div class="text">
+                    <a href="code/app34.rb" download="app34.rb">app 34.rb</a>
+                    <hr>
+                    <pre>
+                      puts("Is it raining? (y/n)")
+                      x = gets.chomp.downcase
+                      x == 'y' ? print('stay_home') : print('go_party')
+                  </pre>
+                  </div>
+                </div>
+              </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+            <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 41 (стр. 72). Индикатор форматирования.</div>
+                  <div class="text">
+                    <a href="code/app35.rb" download="app35.rb">app 35.rb</a>
+                    <hr>
+                    <pre>
+                      print 'Formatting hard drive'
+                      100_000.times do
+                      print '.'
+                      sleep rand(0.05..0.5)
+                      end
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 42. По заданию № 34 (стр. 73).</div>
+                  <div class="text">
+                    <a href="code/app36.rb" download="app36.rb">app 36.rb</a>
+                    <hr>
+                    <pre>
+                      x = 0.1
+        
+                      while true
+                        print "/" + "\r"
+                        sleep x
+        
+                        print "-" + "\r"
+                        sleep x
+        
+                        print "\\" + "\r"
+                        sleep x
+        
+                        print "|" + "\r"
+                        sleep x
+        
+                        print "/" + "\r"
+                        sleep x
+        
+                        print "-" + "\r"
+                        sleep x
+        
+                        print "\\" + "\r"
+                        sleep x
+        
+                        print "|" + "\r"
+                        sleep x
+                      end
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 43. Методы.</div>
+                  <div class="text">
+                    <a href="code/app37.rb" download="app37.rb">app 37.rb</a>
+                    <hr>
+                    <pre>
+                      def get_number(what)
+                      print "Введите #{what}: "
+                      gets.to_i
+                      end
+                      age = get_number('возраст')
+                      salary = get_number('зарплату')
+                      rockets = get_number('количество ракет для запуска')
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 44. По заданию № 35 (стр. 75).</div>
+                  <div class="text">
+                    <a href="code/app38.rb" download="app38.rb">app 38.rb</a>
+                    <hr>
+                    <pre>
+                      def convert_password(password)
+                        "*" * password.length
+                      end
+        
+                      puts "Введте ваш пароль: "
+                      user_password = STDIN.gets
+                      puts "Спасибо ваш пароль защищен #{convert_password(user_password)}"           
+                  </pre>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="spoiler">
+                  <div class="btn">Программа № 45. По заданию № 36 (стр. 80)</div>
+                  <div class="text">
+                    <a href="code/app39.rb" download="app39.rb">app 39.rb</a>
+                    <hr>
+                    <pre>
+                      ########################################
+                      # ОПРЕДЕЛЯЕМ ПЕРЕМЕННЫЕ
+                      ########################################
+                      @people = 10
+                      @machines = 10
+                      ########################################
+                      # ВСПОМОГАТЕЛЬНЫЕ МЕТОДЫ
+                      ########################################
+                      # Метод возвращает случайное значение: true или false
+                      def luck?
+                        rand(0..1) == 1
+                      end
+                      
+                      def boom
+                        diff = rand(1..5)
+                        if luck?
+                          @machines -= diff
+                          puts "#{diff} машин уничтожено"
+                          else
+                          @people -= diff
+                          puts "#{diff} людей погибло"
+                        end
+                      end
+                      
+                      # Метод возвращает случайное название города
+                      def random_city
+                        dice = rand(1..5)
+                        if dice == 1
+                          'Москва'
+                          elsif dice == 2
+                          'Лос-Анджелес'
+                          elsif dice == 3
+                          'Пекин'
+                          elsif dice == 4
+                          'Лондон'
+                          else
+                          'Сеул'
+                        end
+                      end
+                      
+                      def random_sleep
+                        sleep rand(0.3..1.5)
+                      end
+                      
+                      def stats
+                        puts "Осталось #{@people} людей и #{@machines} машин"
+                      end
+                      
+                      ########################################
+                      # СОБЫТИЯ
+                      ########################################
+                      
+                      def event1
+                        puts "Запущена ракета по городу #{random_city}"
+                        random_sleep
+                        boom
+                      end
+                      
+                      def event2
+                        puts "Применено радиоактивное оружие в городе #{random_city}"
+                        random_sleep
+                        boom
+                      end
+                      
+                      def event3
+                        puts "Группа солдат прорывает оборону противника в городе #{random_city}"
+                        random_sleep
+                        boom
+                      end
+                      
+                      ########################################
+                      # ПРОВЕРКА ПОБЕДЫ
+                      ########################################
+                      def check_victory?
+                        if @people > 0 and @machines <= 0
+                          true and puts("Люди выиграли")
+                          exit
+                          elsif 
+                           @machines > 0 and @people <= 0
+                          true and puts("Машины выиграли")
+                        else
+                        end
+                      end
+                      ########################################
+                      # ГЛАВНЫЙ ЦИКЛ
+                      ########################################
+                      loop do
+                        if check_victory?
+                          exit
+                        end
+                        
+                        dice = rand(1..3)
+                        if dice == 1
+                          event1
+                          elsif dice == 2
+                          event2
+                          elsif dice == 3
+                          event3
+                        end
+                        stats
+                        random_sleep
+                      end         
+                  </pre>
+                  </div>
+                </div>
+              </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <ul>
+              <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 46. По заданию № 37 (стр. 80)</div>
+                    <div class="text">
+                      <a href="code/app40.rb" download="app40.rb">app 40.rb</a>
+                      <hr>
+                      <pre>
+                        ########################################
+                        # ОПРЕДЕЛЯЕМ ПЕРЕМЕННЫЕ
+                        ########################################
+                        @people = 10
+                        @machines = 10
+                        ########################################
+                        # ВСПОМОГАТЕЛЬНЫЕ МЕТОДЫ
+                        ########################################
+                        # Метод возвращает случайное значение: true или false
+                        def luck?
+                          rand(0..1) == 1
+                        end
+                        
+                        def boom
+                          diff = rand(1..5)
+                          if luck?
+                            @machines -= diff
+                            puts "#{diff} машин уничтожено"
+                            else
+                            @people -= diff
+                            puts "#{diff} людей погибло"
+                          end
+                        end
+                        
+                        # Метод возвращает случайное название города
+                        def random_city
+                          dice = rand(1..5)
+                          case dice
+                            when 1
+                            'Москва'
+                            when 2
+                            'Лос-Анджелес'
+                            when 3
+                            'Пекин'
+                            when 4
+                            'Лондон'
+                            when 5
+                            'Сеул'
+                          end
+                        end
+                        
+                        def random_sleep
+                          sleep rand(0.3..1.5)
+                        end
+                        
+                        def stats
+                          puts "Осталось #{@people} людей и #{@machines} машин"
+                        end
+                        
+                        ########################################
+                        # СОБЫТИЯ
+                        ########################################
+                        
+                        def event1
+                          puts "Запущена ракета по городу #{random_city}"
+                          random_sleep
+                          boom
+                        end
+                        
+                        def event2
+                          puts "Применено радиоактивное оружие в городе #{random_city}"
+                          random_sleep
+                          boom
+                        end
+                        
+                        def event3
+                          puts "Группа солдат прорывает оборону противника в городе #{random_city}"
+                          random_sleep
+                          boom
+                        end
+                        
+                        ########################################
+                        # ПРОВЕРКА ПОБЕДЫ
+                        ########################################
+                        def check_victory?
+                          if @people > 0 and @machines <= 0
+                            true and puts("Люди выиграли")
+                            exit
+                            elsif 
+                             @machines > 0 and @people <= 0
+                            true and puts("Машины выиграли")
+                          else
+                          end
+                        end
+                        ########################################
+                        # ГЛАВНЫЙ ЦИКЛ
+                        ########################################
+                        loop do
+                          if check_victory?
+                            exit
+                          end
+                          
+                          dice = rand(1..3)
+                          if dice == 1
+                            event1
+                            elsif dice == 2
+                            event2
+                            elsif dice == 3
+                            event3
+                          end
+                          stats
+                          random_sleep
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 47. Однорукий бандит</div>
+                    <div class="text">
+                      <a href="code/app41.rb" download="app41.rb">app 41.rb</a>
+                      <hr>
+                      <pre>
+                        print 'Ваш возраст: '
+                        age = gets.to_i
+                        
+                        if age < 18
+                          puts 'Сожалеем, но вам нет 18'
+                          exit
+                        end
+                        
+                        balance = 20
+                        
+                        loop do
+                          puts 'Нажмите Enter, чтобы дернуть ручку...'
+                          gets
+                        
+                          x = rand(0..5)
+                          y = rand(0..5)
+                          z = rand(0..5)
+                        
+                          puts "Результат: #{x} #{y} #{z}"
+                        
+                          if x == 0 && y == 0 && z == 0
+                          balance = 0
+                          puts 'Ваш баланс обнулен'
+                          elsif x == 1 && y == 1 && z == 1
+                            balance += 10
+                            puts 'Баланс увеличился на 10 долларов'
+                          elsif x == 2 && y == 2 && z == 2
+                            balance += 20
+                            puts 'Баланс увеличился на 20 долларов'
+                          else
+                          balance -= 0.5
+                          puts 'Баланс уменьшился на 50 центов'
+                        end
+                        
+                        puts "Ваш баланс: #{balance} долларов"
+                        
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 48. По заданию № 40 (стр. 87)</div>
+                    <div class="text">
+                      <a href="code/app43.rb" download="app43.rb">app 43.rb</a>
+                      <hr>
+                      <pre>
+                        print 'Ваш возраст: '
+                        age = gets.to_i
+                        if age < 18
+                          puts 'Сожалеем, но вам нет 18'
+                          exit
+                        end
+                        
+                        balance = 20
+                        loop do
+                          puts 'Нажмите Enter, чтобы дернуть ручку...'
+                          gets
+                        
+                          x = rand(0..5)
+                          y = rand(0..5)
+                          z = rand(0..5)
+                        
+                          x.times do |x|
+                            print "Результат: #{x} #{0} #{0}\r"
+                            sleep 0.5
+                          end
+                        
+                          y.times do |y|
+                            print "Результат: #{x} #{y} #{0}\r"
+                            sleep 0.5
+                          end
+                        
+                          z.times do |z|
+                            print "Результат: #{x} #{y} #{z}\r"
+                            sleep 0.5
+                          end
+                        
+                            puts "Результат: #{x} #{y} #{z}"
+                        
+                          if x == 0 && y == 0 && z == 0
+                            balance = 0
+                            puts 'Ваш баланс обнулен'
+                          elsif x == 1 && y == 1 && z == 1
+                            balance += 10
+                            puts 'Баланс увеличился на 10 долларов'
+                          elsif x == 2 && y == 2 && z == 2
+                            balance += 20
+                            puts 'Баланс увеличился на 20 долларов'
+                          else
+                            balance -= 0.5
+                            puts 'Баланс уменьшился на 50 центов'
+                          end
+                        
+                          puts "Ваш баланс: #{balance} долларов"
+                        
+                          if balance == 0
+                            puts 'Игра завершена'
+                            exit
+                          end  
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 49. Анимация счетчика</div>
+                    <div class="text">
+                      <a href="code/app42.rb" download="app42.rb">app 42.rb</a>
+                      <hr>
+                      <pre>
+                        print 'Введите число: '
+                        counter = gets.to_i
+                        counter.times do |n|
+                          print "#{n}\r"
+                          sleep 0.5
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 50. Записная книжка</div>
+                    <div class="text">
+                      <a href="code/app44.rb" download="app44.rb">app 44.rb</a>
+                      <hr>
+                      <pre>
+                        arr = []
+          
+                        loop do
+                          print 'Введите имя и телефон человека (Enter для окончания ввода): '
+                          entry = gets.chomp
+                          break if entry.empty?
+                          arr << entry
+                        end
+                        
+                        puts 'Ваша записная книжка:'
+                        
+                        arr.each do |element|
+                          puts element
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul>
+              <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 51. По заданию № 43 (стр. 98)</div>
+                    <div class="text">
+                      <a href="code/app45.rb" download="app45.rb">app 45.rb</a>
+                      <hr>
+                      <pre>
+                        ###############################
+                        # ОБЪЯВЛЯЕМ МАССИВЫ
+                        ###############################
+                        # массив для первой команды
+                        @arr1 = Array.new(10, 1)
+                        # массив для второй команды
+                        @arr2 = Array.new(10, 1)
+                        
+                        ###############################
+                        # АТАКА
+                        ###############################
+                        # Метод принимает массив для атаки
+                        def attack(arr)
+                          sleep 1 # добавим sleep для красоты
+                          i = rand(0..9)
+                          if arr[i] == 1
+                            arr[i] = 0
+                            puts "Робот по индексу #{i} уничтожен"
+                            else
+                            puts "Промазали по индексу #{i}"
+                          end
+                          sleep 1 # еще один sleep для красоты вывода
+                        end
+                        
+                        ###############################
+                        # ПРОВЕРКА ПОБЕДЫ
+                        ###############################
+                        def victory?
+                          robots_left1 = @arr1.count { |x| x == 1 }
+                          robots_left2 = @arr2.count { |x| x == 1 }
+                            if robots_left1 == 0
+                            puts "Команда 2 победила, в команде осталось #{robots_left2} роботов"
+                            return true
+                          end
+                            if robots_left2 == 0
+                            puts "Команда 1 победила, в команде осталось #{robots_left1} роботов"
+                            return false
+                          end
+                          false
+                        end
+                        
+                        ###############################
+                        # СТАТИСТИКА
+                        ###############################
+                        def stats
+                          # количество живых роботов для первой и второй команды
+                          cnt1 = @arr1.count { |x| x == 1 }
+                          cnt2 = @arr2.count { |x| x == 1 }
+                          puts "1-ая команда: #{cnt1} роботов в строю"
+                          puts "2-ая команда: #{cnt2} роботов в строю"
+                        end
+                        
+                        ###############################
+                        # ГЛАВНЫЙ ЦИКЛ
+                        ###############################
+                        loop do
+                          puts 'Первая команда наносит удар...'
+                          attack(@arr2)
+                          exit if victory?
+                          stats
+                          sleep 3
+                          puts # пустая строка
+                          puts 'Вторая команда наносит удар...'
+                          attack(@arr1)
+                          exit if victory?
+                          stats
+                          sleep 3
+                          puts # пустая строка
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 52. По заданию № 44 (стр. 100)</div>
+                    <div class="text">
+                      <a href="code/app46.rb" download="app46.rb">app 46.rb</a>
+                      <hr>
+                      <pre>
+                        ###############################
+                        # ОБЪЯВЛЯЕМ МАССИВЫ
+                        ###############################
+                        # массив для первой команды
+                        @arr1 = Array.new(10, 1)
+                        # массив для второй команды
+                        @arr2 = Array.new(10, 1)
+                        
+                        ###############################
+                        # АТАКА
+                        ###############################
+                        # Метод принимает массив для атаки
+                        def attack(arr)
+                          sleep 1 # добавим sleep для красоты
+                          i = rand(0..9)
+                          if arr[i] == 1
+                            arr[i] = 0
+                            puts "Робот по индексу #{i} уничтожен"
+                            else
+                            puts "Промазали по индексу #{i}"
+                          end
+                          sleep 1 # еще один sleep для красоты вывода
+                        end
+                        
+                        ###############################
+                        # ПРОВЕРКА ПОБЕДЫ
+                        ###############################
+                        def victory?
+                          robots_left1 = @arr1.count { |x| x == 1 }
+                          robots_left2 = @arr2.count { |x| x == 1 }
+                            if robots_left1 == 0
+                            puts "Команда 2 победила, в команде осталось #{robots_left2} роботов"
+                            return true
+                          end
+                            if robots_left2 == 0
+                            puts "Команда 1 победила, в команде осталось #{robots_left1} роботов"
+                            return false
+                          end
+                          false
+                        end
+                        
+                        ###############################
+                        # СТАТИСТИКА
+                        ###############################
+                        def stats
+                          # количество живых роботов для первой и второй команды
+                          cnt1 = @arr1.count { |x| x == 1 }
+                          cnt2 = @arr2.count { |x| x == 1 }
+                          puts "\n"
+                          puts "1-ая команда: #{cnt1} роботов в строю"
+                          puts "#{@arr1}"
+                          puts "2-ая команда: #{cnt2} роботов в строю"
+                          puts "#{@arr2}"
+                          
+                        end
+                        
+                        ###############################
+                        # ГЛАВНЫЙ ЦИКЛ
+                        ###############################
+                        loop do
+                          puts 'Первая команда наносит удар...'
+                          attack(@arr2)
+                          exit if victory?
+                          stats
+                          sleep 3
+                          puts # пустая строка
+                          puts 'Вторая команда наносит удар...'
+                          attack(@arr1)
+                          exit if victory?
+                          stats
+                          sleep 3
+                          puts # пустая строка
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li> 
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 53. По заданию № 45 (стр. 100)</div>
+                    <div class="text">
+                      <a href="code/app47.rb" download="app47.rb">app 47.rb</a>
+                      <hr>
+                      <pre>
+                        ###############################
+                        # ОБЪЯВЛЯЕМ МАССИВЫ
+                        ###############################
+                        # массив для первой команды
+                        @arr1 = Array.new(10, 1)
+                        # массив для второй команды
+                        @arr2 = Array.new(10, 1)
+                        
+                        ###############################
+                        # АТАКА
+                        ###############################
+                        # Метод принимает массив для атаки
+                        def attack(arr)
+                          sleep 1 # добавим sleep для красоты
+                          i = rand(0..9)
+                          if arr[i] == 1
+                            arr[i] = 0
+                            puts "Робот по индексу #{i} уничтожен"
+                            else
+                            puts "Промазали по индексу #{i}"
+                          end
+                          sleep 1 # еще один sleep для красоты вывода
+                        end
+                        
+                        ###############################
+                        # ПРОВЕРКА ПОБЕДЫ
+                        ###############################
+                        def victory?
+                          robots_left1 = @arr1.count { |x| x == 1 }
+                          robots_left2 = @arr2.count { |x| x == 1 }
+                            if robots_left1 == 0
+                            puts "Команда 2 победила, в команде осталось #{robots_left2} роботов"
+                            return true
+                          end
+                            if robots_left2 == 0
+                            puts "Команда 1 победила, в команде осталось #{robots_left1} роботов"
+                            return false
+                          end
+                          false
+                        end
+                        
+                        ###############################
+                        # СТАТИСТИКА
+                        ###############################
+                        def stats
+                          # количество живых роботов для первой и второй команды
+                          cnt1 = @arr1.count { |x| x == 1 }
+                          cnt2 = @arr2.count { |x| x == 1 }
+                          puts "\n"
+                          puts "1-ая команда: #{cnt1} роботов в строю"
+                          puts "#{@arr1}"
+                          puts "2-ая команда: #{cnt2} роботов в строю"
+                          puts "#{@arr2}"
+                          
+                        end
+                        
+                        ###############################
+                        # ГЛАВНЫЙ ЦИКЛ
+                        ###############################
+                        loop do
+                          puts 'Первая команда наносит удар...'
+                          attack(@arr2)
+                          exit if victory?
+                          stats
+                          sleep 3
+                          puts # пустая строка
+                          puts 'Вторая команда наносит удар...'
+                          attack(@arr1)
+                          exit if victory?
+                          stats
+                          sleep 3
+                          puts # пустая строка
+                        end
+                    </pre>
+                    </div>
+                  </div>
+                </li>           
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 54. По заданию № 47 (стр. 113)</div>
+                    <div class="text">
+                      <a href="code/app48.rb" download="app48.rb">app 48.rb</a>
+                      <hr>
+                      <pre>
+                        a = Array.new(5) { Array.new(4, rand(1..5))}
+                        a.each {|var| p var}
+                    </pre>
+                    </div>
+                  </div>
+                </li> 
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 55. По заданию № 48 (стр. 113)</div>
+                    <div class="text">
+                      <a href="code/app49.rb" download="app49.rb">app 49.rb</a>
+                      <hr>
+                      <pre>
+                        a = Array.new(5) { Array.new(4, rand(1..5))}
+                        a.each {|var| p var}
+                    </pre>
+                    </div>
+                  </div>
+                </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul>
+              <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 56. По заданию № 49 (стр. 113)</div>
+                    <div class="text">
+                      <a href="code/app50.rb" download="app50.rb">app 50.rb</a>
+                      <hr>
+                      <pre>
+                        a = Array.new(4) { Array.new(5){ rand(rand(1..9))}}
+                        a.each {|var| p var}
+                    </pre>
+                    </div>
+                  </div>
+                </li> 
+                <li>
+                  <div class="spoiler">
+                    <div class="btn">Программа № 57. По заданию № 50 (стр. 117)</div>
+                    <div class="text">
+                      <p>Часть вывода</p>
+                      <pre>
+                          [1] pry(main)> Array.new(10) { Array.new(10) }
+                          [
+                              [0] [
+                                  [0] nil,
+                                  [1] nil,
+                                  [2] nil,
+                                  [3] nil,
+                                  [4] nil,
+                                  [5] nil,
+                                  [6] nil,
+                                  [7] nil,
+                                  [8] nil,
+                                  [9] nil
+                              ],
+                              [1] [
+                                  [0] nil,
+                                  [1] nil,
+                                  [2] nil,
+                                  [3] nil,
+                                  [4] nil,
+                                  [5] nil,
+                                  [6] nil,
+                                  [7] nil,
+                                  [8] nil,
+                                  [9] nil
+                              ],
+                              [2] [
+                                  [0] nil,
+                                  [1] nil,
+                                  [2] nil,
+                                  [3] nil,
+                                  [4] nil,
+                                  [5] nil,
+                                  [6] nil,
+                                  ...                
+                    </pre>
+                    </div>
+                  </div>
+                </li>          
+          </ul>
+        </div>
+      </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $('.spoiler').click(function (event) {
@@ -2109,6 +2249,9 @@
       }
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>

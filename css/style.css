@@ -1,8 +1,10 @@
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
-table, th, td {
-   border: 1px solid black;
+table,
+th,
+td {
+  border: 1px solid black;
 }
 td {
   padding: 1em;
@@ -29,9 +31,14 @@ td {
   background: #eee;
   width: 100%;
   font-size: 16px;
+  white-space: pre-wrap;
   color: rgb(112, 14, 14);
   padding: 10px;
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 15px;
+  text-align: left;
+}
+ul {
+  list-style: none;
 }
