@@ -4,6 +4,10 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
+	erb :index
+end
+
+post '/visit' do
 	# erb "Hello! <a href=\"https://github.com/bootstrap-ruby/sinatra-bootstrap\">Original</a> pattern has been modified for <a href=\"http://rubyschool.us/\">Ruby School</a>"	
 		# user_name, phone, date_time
 		@user_name = params[:user_name]
@@ -14,13 +18,31 @@ get '/' do
 		@title = "Thank you!"
 		@message = "Уважаемый #{@user_name}, мы ждём вас #{@user_date_time} у выбранного парикмахера #{@choose_hairdresser}."
 
-		f = File.open 'users.txt', 'a'
+		f = File.open './public/users.txt', 'a'
 		f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. hairdresser: #{@choose_hairdresser}.\n"
 		f.close
-	
-		
-end
 
+		erb :message
+		
+	end
+
+	post '/contacts' do
+			# contact_user_name, contact_user_email, contact_message
+			@contact_user_name = params[:contact_user_name]
+			@contact_user_email = params[:contact_user_email]
+			@contact_message = params[:contact_message]
+		
+			@title = "Thank you!"
+			@message = "Уважаемый #{@user_name}, мы ответим на ваше сообщение."
+	
+			f = File.open './public/contacts.txt', 'a'
+			f.write "User: #{@contact_user_name}, email: #{@contact_user_email}, message: #{@contact_message}.\n"
+			f.close
+	
+			erb :message
+			
+		end
+		
 get '/about' do
 	erb :about
 end
@@ -31,4 +53,24 @@ end
 
 get '/contacts' do
 	erb :contacts
+end
+
+# Добавить зону /admin где по паролю будет выдаваться список тех, кто записался (из users.txt)
+
+get '/admin' do
+  erb :admin
+end
+
+post '/admin' do
+	@login = params[:login]
+	@password = params[:password]
+
+	# провека логина и пароля
+	if @login == 'admin' && @password == 'qwerty'
+  	@file = File.open("./public/users.txt","r")
+  	erb :watch_result
+	 	else
+		@report = '<p>Доступ запрещён! Неправильный логин или пароль.</p>'
+		erb :admin
+	end
 end
