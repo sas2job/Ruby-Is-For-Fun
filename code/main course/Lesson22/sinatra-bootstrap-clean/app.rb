@@ -8,7 +8,6 @@ get '/' do
 end
 
 post '/visit' do
-	# erb "Hello! <a href=\"https://github.com/bootstrap-ruby/sinatra-bootstrap\">Original</a> pattern has been modified for <a href=\"http://rubyschool.us/\">Ruby School</a>"	
 		# user_name, phone, date_time
 		@user_name = params[:user_name]
 		@user_phone = params[:user_phone]
@@ -57,20 +56,42 @@ end
 
 # Добавить зону /admin где по паролю будет выдаваться список тех, кто записался (из users.txt)
 
-get '/admin' do
-  erb :admin
+# get '/admin' do
+#   erb :admin
+# end
+
+get '/clientslist' do
+  erb :clients_admin
 end
 
-post '/admin' do
+post '/clientslist' do
 	@login = params[:login]
 	@password = params[:password]
 
 	# провека логина и пароля
 	if @login == 'admin' && @password == 'qwerty'
   	@file = File.open("./public/users.txt","r")
-  	erb :watch_result
+  	erb :watch_clients
 	 	else
 		@report = '<p>Доступ запрещён! Неправильный логин или пароль.</p>'
-		erb :admin
+		erb :watch_clients
+	end
+end
+
+get '/messageslist' do
+  erb :messages_admin
+end
+
+post '/messageslist' do
+	@login = params[:login]
+	@password = params[:password]
+
+	# провека логина и пароля
+	if @login == 'admin' && @password == 'qwerty'
+  	@file = File.open("./public/contacts.txt","r")
+  	erb :watch_messages
+	 	else
+		@report = '<p>Доступ запрещён! Неправильный логин или пароль.</p>'
+		erb :watch_messages
 	end
 end
