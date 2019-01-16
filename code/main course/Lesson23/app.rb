@@ -13,15 +13,18 @@ post '/visit' do
 		@user_phone = params[:user_phone]
 		@user_date_time = params[:user_date_time]
 		@choose_hairdresser = params[:choose_hairdresser]
-	
-		@title = "Thank you!"
-		@message = "Уважаемый #{@user_name}, мы ждём вас #{@user_date_time} у выбранного парикмахера #{@choose_hairdresser}."
+		@colorpicker = params[:colorpicker]
 
 		f = File.open './public/users.txt', 'a'
-		f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. hairdresser: #{@choose_hairdresser}.\n"
+		f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. Hairdresser: #{@choose_hairdresser}. Color: #{@colorpicker}.\n"
 		f.close
 
-		erb :message
+	
+		# @title = "Thank you!"
+		# @message = "Уважаемый #{@user_name},<br> мы ждём вас #{@user_date_time} у выбранного парикмахера #{@choose_hairdresser}.<br>
+		# Выбранный цвет #{@colorpicker}."
+
+		erb :message_client
 		
 	end
 
