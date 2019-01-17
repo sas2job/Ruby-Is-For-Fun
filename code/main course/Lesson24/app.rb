@@ -20,31 +20,29 @@ post '/visit' do
 						:user_phone => 'Введите номер телефона',
 						:user_date_time => 'Введите дату и время'	}
 
-		#для каждой пары ключ - значение				
-		hh.each do |key, value|
-			# если параметр пуст 
-			if params[key] == ''
-				# переменной error присвоить value из хеша hh
-				# (а value из хеша hh это сообщение об ошибке)
-				# т.е. переменной error присвоить сообщение об ошибке
-				@error = hh[key]
+		@error = hh.select {|key,_| params[key] == ""}.values.join(", ")
 
-				#вернуть представление visit
-				return erb :visit
-			end
+		if @error != ''
+			return erb :visit
+		else
+
+			f = File.open './public/users.txt', 'a'
+			f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. Hairdresser: #{@choose_hairdresser}. Color: #{@colorpicker}.\n"
+			f.close
+			
+			return erb :message_client
 
 		end
 
-		f = File.open './public/users.txt', 'a'
-		f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. Hairdresser: #{@choose_hairdresser}. Color: #{@colorpicker}.\n"
-		f.close
+		
+
 
 	
 		# @title = "Thank you!"
 		# @message = "Уважаемый #{@user_name},<br> мы ждём вас #{@user_date_time} у выбранного парикмахера #{@choose_hairdresser}.<br>
 		# Выбранный цвет #{@colorpicker}."
 
-		erb :message_client
+		# erb :message_client
 		
 	end
 
