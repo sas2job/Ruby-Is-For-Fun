@@ -1,0 +1,35 @@
+<h2>Вы можете написать нам</h2>
+
+<form action="/contacts" method="POST">
+  <div class="form-group">
+    <label for="exampleInputName1">Ваше имя</label>
+    <input
+      name="contact_user_name"
+      type="text"
+      class="form-control"
+      id="exampleInputName1"
+      placeholder="Введите Ваше имя"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Напишите ваш электронный адрес</label>
+    <input
+      name="contact_user_email"
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      placeholder="Ваш электронный адрес"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputTextArea1">Напишите ваше сообщение</label>
+    <textarea
+      name="contact_message"
+      class="form-control"
+      id="exampleInputTextArea1"
+      rows="3"
+      placeholder="Ваше сообщение"
+    ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
