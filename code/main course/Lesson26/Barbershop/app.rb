@@ -4,17 +4,40 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sqlite3'
 
+# Method connect with database
+def get_db
+	return SQLite3::Database.new 'barbershop.db'
+end
+
+# Configure application
 configure do
-	@db = SQLite3::Database.new 'barbershop.db'
-	@db.execute 'CREATE TABLE IF NOT EXISTS 
-	"Users"
-	 (
-			"id" INTEGER PRIMARY KEY AUTOINCREMENT, 
-			"Name" TEXT, 
-			"DateStamp" TEXT, 
-			"Baber" TEXT, 
-			"Color" TEXT
-		)'
+	db = get_db
+	db.execute 'CREATE TABLE IF NOT EXISTS 
+	 "Users"
+	  (
+	 		"id" INTEGER PRIMARY KEY AUTOINCREMENT, 
+			"Username" TEXT,
+			"Phone" TEXT, 
+	 		"DateStamp" TEXT, 
+	 		"Barber" TEXT, 
+	 		"Color" TEXT
+		 )'
+		db.close	 
+end
+
+# Method save form data to database
+def save_form_data_to_database
+	db = get_db
+	db.execute 'insert into Users 
+		 (
+			 username,
+			 phone,
+			 datestamp,
+			 barber,
+			 color 
+		 )
+		 values ( 	?, ?, ?, ?, ? )', [@user_name, @user_phone, @user_date_time, @choose_hairdresser, @colorpicker]
+	db.close		 
 end
 
 get '/' do
@@ -40,18 +63,18 @@ post '/visit' do
 			return erb :visit
 		else
 
-			f = File.open './public/users.txt', 'a'
-			f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. Hairdresser: #{@choose_hairdresser}. Color: #{@colorpicker}.\n"
-			f.close
-			
-			return erb :message_client
+		# f = File.open './public/users.txt', 'a'
+		# f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. Hairdresser: #{@choose_hairdresser}. Color: #{@colorpicker}.\n"
+		# f.close
+		save_form_data_to_database
+
+		@title = "Спасибо!"
+
+		return erb :message_client
 
 		end
 
-		
 
-
-	
 		# @title = "Thank you!"
 		# @message = "Уважаемый #{@user_name},<br> мы ждём вас #{@user_date_time} у выбранного парикмахера #{@choose_hairdresser}.<br>
 		# Выбранный цвет #{@colorpicker}."
