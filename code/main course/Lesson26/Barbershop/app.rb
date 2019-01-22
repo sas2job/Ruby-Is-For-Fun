@@ -6,7 +6,9 @@ require 'sqlite3'
 
 # Method connect with database
 def get_db
-	return SQLite3::Database.new 'barbershop.db'
+	db = SQLite3::Database.new 'barbershop.db'
+	db.results_as_hash = true
+	return db
 end
 
 # Configure application
@@ -68,7 +70,7 @@ post '/visit' do
 		# f.close
 		save_form_data_to_database
 
-		@title = "Спасибо!"
+		@title = "Спасибо, Вы записаны"
 
 		return erb :message_client
 
