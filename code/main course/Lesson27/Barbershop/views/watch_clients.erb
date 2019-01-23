@@ -1,0 +1,18 @@
+<h1>List of clients</h1>
+
+<table class="table">
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<table border="1">
+  <% @file.each_line do |line| %>
+  <tr>
+    <td><%= line %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= @file.close %>

@@ -1,0 +1,10 @@
+<h1>List of messages</h1>
+
+
+<table border="1">
+<% @file.each_line do |line| %>
+  <tr><td><%= line %></td></tr>
+<% end %>
+</table>
+
+<%= @file.close %>
