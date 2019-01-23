@@ -1,15 +1,24 @@
 <h1>List of clients</h1>
 
-<%= @results %>
-
-<table class="table">
-  <% @results.each do |row| %>
-  <tr>
-    <td><%= row['Username'] %></td>
-    <td><%= row['Phone'] %></td>
-    <td><%= row['DateStamp'] %></td>
-    <td><%= row['Barber'] %></td>
-    <td><%= row['Color'] %></td>
-  </tr>
-  <% end %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Имя</th>
+      <th>Телефон</th>
+      <th>Дата записи</th>
+      <th>Парикмахер</th>
+      <th>Цвет</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @results.each do |row| %>
+    <tr>
+      <td><%= row['Username'] %></td>
+      <td><%= row['Phone'] %></td>
+      <td><%= row['DateStamp'] %></td>
+      <td><%= row['Barber'] %></td>
+      <td><%= row['Color'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
