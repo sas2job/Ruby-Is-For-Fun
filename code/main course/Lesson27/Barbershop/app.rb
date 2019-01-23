@@ -65,9 +65,6 @@ post '/visit' do
 			return erb :visit
 		else
 
-		# f = File.open './public/users.txt', 'a'
-		# f.write "User: #{@user_name}, phone: #{@user_phone}, date and time: #{@user_date_time}. Hairdresser: #{@choose_hairdresser}. Color: #{@colorpicker}.\n"
-		# f.close
 		save_form_data_to_database
 
 		@title = "Спасибо, Вы записаны"
@@ -75,13 +72,6 @@ post '/visit' do
 		return erb :message_client
 
 		end
-
-
-		# @title = "Thank you!"
-		# @message = "Уважаемый #{@user_name},<br> мы ждём вас #{@user_date_time} у выбранного парикмахера #{@choose_hairdresser}.<br>
-		# Выбранный цвет #{@colorpicker}."
-
-		# erb :message_client
 		
 	end
 
@@ -114,29 +104,18 @@ get '/contacts' do
 	erb :contacts
 end
 
-# Добавить зону /admin где по паролю будет выдаваться список тех, кто записался (из users.txt)
-
-# get '/admin' do
-#   erb :admin
-# end
-
+	# Вывод пользователей (клиентов) из базы данных без использования логина/пароля
 get '/clientslist' do
-  erb :clients_admin
+	# erb :clients_admin
+
+	db = get_db
+
+	@results = db.execute 'select * from Users order by id desc'
+
+	erb :watch_clients
 end
 
-post '/clientslist' do
-	@login = params[:login]
-	@password = params[:password]
 
-	# провека логина и пароля
-	if @login == 'admin' && @password == 'qwerty'
-  	@file = File.open("./public/users.txt","r")
-  	erb :watch_clients
-	 	else
-		@report = '<p>Доступ запрещён! Неправильный логин или пароль.</p>'
-		erb :watch_clients
-	end
-end
 
 get '/messageslist' do
   erb :messages_admin

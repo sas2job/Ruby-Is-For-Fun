@@ -1,18 +1,15 @@
 <h1>List of clients</h1>
 
-<table class="table">
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+<%= @results %>
 
-<table border="1">
-  <% @file.each_line do |line| %>
+<table class="table">
+  <% @results.each do |row| %>
   <tr>
-    <td><%= line %></td>
+    <td><%= row['Username'] %></td>
+    <td><%= row['Phone'] %></td>
+    <td><%= row['DateStamp'] %></td>
+    <td><%= row['Barber'] %></td>
+    <td><%= row['Color'] %></td>
   </tr>
   <% end %>
 </table>
-
-<%= @file.close %>
