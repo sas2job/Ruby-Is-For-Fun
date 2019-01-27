@@ -17,11 +17,7 @@
       <td><%= row['Phone'] %></td>
       <td><%= row['DateStamp'] %></td>
       <td><%= row['Barber'] %></td>
-      <td>
-        <span style="background-color: <%= row['Color'] %>;"
-          >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
-        >
-      </td>
+      <td style="background-color: <%= row['Color'] %>;"><%= row['Color'] %></td>
     </tr>
     <% end %>
   </tbody>
