@@ -39,10 +39,11 @@
   <div class="form-group">
     <label for="choose_hairdresser">Выбор парикмахера</label>
     <select class="form-control" name="choose_hairdresser">
-      <option <%= @choose_hairdresser == '' ? 'selected' : '' %> value="none" <%= 'selected' %>>Выберите парикмахера ...</option>
-      <option <%= @choose_hairdresser == 'Walter White' ? 'selected' : '' %> value="Walter White">Walter White</option>
-      <option <%= @choose_hairdresser == 'Jessie Pinkman' ? 'selected' : '' %> value="Jessie Pinkman">Jessie Pinkman</option>
-      <option <%= @choose_hairdresser == 'Gus Fring' ? 'selected' : '' %> value="Gus Fring">Gus Fring</option>
+
+      <% @barbers.each do |item| %>
+        <option <%= @barber == item['name'] ? 'selected' : '' %><%= item['name'] %></option>
+      <% end %>
+
     </select>
   </div>
   <div class="form-group">

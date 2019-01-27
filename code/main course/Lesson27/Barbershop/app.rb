@@ -23,6 +23,11 @@ def get_db
 	return db
 end
 
+before do
+	db = get_db
+	@barbers = db.execute 'select * from barbers'
+end
+
 # Configure application
 configure do
 	db = get_db
