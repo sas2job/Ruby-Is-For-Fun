@@ -25,7 +25,7 @@ end
 
 before do
 	db = get_db
-	@barbers = db.execute 'select * from barbers'
+	@barbers = db.execute 'SELECT * FROM Barbers'
 end
 
 # Configure application

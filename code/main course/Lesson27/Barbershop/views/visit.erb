@@ -39,11 +39,9 @@
   <div class="form-group">
     <label for="choose_hairdresser">Выбор парикмахера</label>
     <select class="form-control" name="choose_hairdresser">
-
       <% @barbers.each do |item| %>
-        <option <%= @barber == item['name'] ? 'selected' : '' %><%= item['name'] %></option>
+      <option <%= @choose_hairdresser == item['name'] ? 'selected' : '' %>><%= item['name']%></option>
       <% end %>
-
     </select>
   </div>
   <div class="form-group">
