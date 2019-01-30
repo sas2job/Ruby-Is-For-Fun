@@ -20,7 +20,8 @@ end
 
 configure do
 	# инициализация БД
-	init_db
+	init_db 
+	# создается таблица если она не существует
 	@db.execute 'CREATE TABLE IF NOT EXISTS Posts
 	(
 		id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -46,5 +47,11 @@ post '/new' do
 	# получаем переменную из post - запроса
 
 	content = params[:content]
+
+	if content.length <= 0
+		 @error = 'Type text'
+		 return erb :new
+	end
+
 	erb "You typed: #{content}"
 end
