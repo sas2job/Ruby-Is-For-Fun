@@ -70,12 +70,19 @@ end
 # вывод информации о посте
 
 get '/details/:post_id' do
-	post_id = params[:post_id]
 
+	# получаем переменную из url'a
+	post_id = params[:post_id]
+ 
+	# получаем список постов
+	# (у нас будет только один пост)
 	results = @db.execute 'select * from Posts where id = ?', [post_id]
 
+	# выбираем один этот пост в переменную @row
 	@row = results[0]
 
 	# erb "Displaying information for post with id #{post_id}"
+
+	# возвращаем представление details.erb
 	erb :details
 end
