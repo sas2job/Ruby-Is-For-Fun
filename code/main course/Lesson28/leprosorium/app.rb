@@ -21,6 +21,7 @@ end
 configure do
 	# инициализация БД
 	init_db 
+
 	# создается таблица если она не существует
 	@db.execute 'CREATE TABLE IF NOT EXISTS Posts
 	(
@@ -28,6 +29,15 @@ configure do
 		created_date DATE, 
 		content TEXT
 		)'
+
+		# создается таблица если она не существует
+		@db.execute 'CREATE TABLE IF NOT EXISTS Comments
+		(
+			id INTEGER PRIMARY KEY AUTOINCREMENT, 
+			created_date DATE, 
+			content TEXT,
+			post_id INTEGER
+			)'	
 end
 
 get '/' do
@@ -100,5 +110,5 @@ post '/details/:post_id' do
 		content = params[:content]
  
 		erb "You typed comment #{content} for post #{post_id}"
-		
+
 end
