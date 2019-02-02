@@ -91,6 +91,9 @@ get '/details/:post_id' do
 	# выбираем один этот пост в переменную @row
 	@row = results[0]
 
+	# выбираем комментарии для нашего поста 
+	@comments = @db.execute 'select * from Comments where post_id = ? order by desc', [post_id]
+
 	# erb "Displaying information for post with id #{post_id}"
 
 	# возвращаем представление details.erb
