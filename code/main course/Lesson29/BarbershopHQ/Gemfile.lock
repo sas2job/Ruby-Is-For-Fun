@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:cldwalker/ripl.git
+  revision: 4b4259a752d099c091cfb8e194bdea61c7a6d0ea
+  branch: master
+  specs:
+    ripl (0.7.1)
+      bond (~> 0.5.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,8 +34,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    ripl (0.7.1)
-      bond (~> 0.5.1)
     ripl-multi_line (0.3.1)
       ripl (>= 0.3.6)
     ripl-rack (0.2.1)
@@ -49,7 +55,8 @@ GEM
       rack-protection (= 2.0.5)
       sinatra (= 2.0.5)
       tilt (>= 1.3, < 3)
-    sqlite3 (1.4.0)
+    sqlite3 (1.3.13)
+    sqlite3 (1.3.13-x64-mingw32)
     thread_safe (0.3.6)
     tilt (2.0.9)
     tux (0.3.0)
@@ -62,14 +69,16 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   activerecord
+  ripl!
   sinatra
   sinatra-activerecord
   sinatra-contrib
-  sqlite3
+  sqlite3 (~> 1.3.6)
   tux
 
 BUNDLED WITH
-   1.17.1
+   2.0.1
