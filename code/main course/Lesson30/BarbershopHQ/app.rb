@@ -37,7 +37,16 @@ post '/visit' do
 	@choose_hairdresser = params[:choose_hairdresser]
 	@colorpicker = params[:colorpicker]
 	
-	client = Client.create :name => @user_name, :phone => @user_phone, :datestamp => @user_date_time, :barber => @choose_hairdresser, :color => @colorpicker
+	# client = Client.create :name => @user_name, :phone => @user_phone, :datestamp => @user_date_time, :barber => @choose_hairdresser, :color => @colorpicker
+	
+	c = Client.new
+	c.name = @user_name
+	c.phone = @user_phone
+	c.datestamp = @user_date_time
+	c.barber = @choose_hairdresser
+	c.color = @colorpicker
+	c.save
+
 	@title = "Спасибо, Вы записаны"
 
 	return erb :message_client
