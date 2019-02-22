@@ -30,23 +30,20 @@ get '/visit' do
 end
 
 post '/visit' do
-	# user_name, phone, date_time
-	@user_name = params[:user_name]
-	@user_phone = params[:user_phone]
-	@user_date_time = params[:user_date_time]
-	@choose_hairdresser = params[:choose_hairdresser]
-	@colorpicker = params[:colorpicker]
 	
 	# client = Client.create :name => @user_name, :phone => @user_phone, :datestamp => @user_date_time, :barber => @choose_hairdresser, :color => @colorpicker
 	
-	c = Client.new
-	c.name = @user_name
-	c.phone = @user_phone
-	c.datestamp = @user_date_time
-	c.barber = @choose_hairdresser
-	c.color = @colorpicker
-	c.save
+	# c = Client.new
+	# c.name = @user_name
+	# c.phone = @user_phone
+	# c.datestamp = @user_date_time
+	# c.barber = @choose_hairdresser
+	# c.color = @colorpicker
+	# c.save
 
+	c = Client.new params[:client]
+	c.save
+	
 	@title = "Спасибо, Вы записаны"
 
 	return erb :message_client
