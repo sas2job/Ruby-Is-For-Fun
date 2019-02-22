@@ -38,12 +38,12 @@ end
 post '/visit' do
 
 	@c = Client.new params[:client]
-	@c.save
-
-	@title = "Спасибо, Вы записаны"
-
-	return erb :message_client
-
+	if @c.save
+		@title = "Спасибо, Вы записаны"
+		return erb :message_client_success
+	else	
+		return erb :message_client_error
+	end
 end
 
 post '/contacts' do
