@@ -2,7 +2,7 @@
    Hello  <%= @user_name %>
 </h1>
 
-<p>Уважаемый, <%= @user_name %></p>
+<p>Уважаемый, <%= @c.name %></p>
 <p><%= @title %></p>
-<p>Вы записались на <%= @user_date_time %>, парикмахер: <%= @choose_hairdresser %>, выбранный цвет
-<span style="background-color: <%= @colorpicker %>;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p>Вы записались на <%= @c.datestamp %>, парикмахер: <%= @c.barber %>, выбранный цвет
+<span style="background-color: <%= @c.color %>;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
