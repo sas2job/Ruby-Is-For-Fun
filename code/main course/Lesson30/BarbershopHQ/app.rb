@@ -40,9 +40,11 @@ post '/visit' do
 	@c = Client.new params[:client]
 	if @c.save
 		@title = "Спасибо, Вы записаны"
-		return erb :message_client_success
+		return erb :message_client
 	else	
-		return erb :message_client_error
+		@title = "Ошибка"
+		@error = @c.errors.full_messages.first
+		return erb :visit
 	end
 end
 
