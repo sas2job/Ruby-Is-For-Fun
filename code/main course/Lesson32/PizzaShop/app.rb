@@ -6,8 +6,7 @@ require 'sinatra/activerecord'
 
 set :database, "sqlite3:pizzashop.db"
 
-class Product 
-
+class Product < ActiveRecord::Base
 	
 end
 
