@@ -1,6 +1,7 @@
 .item {
     text-align: center;
     background-color: #f6f8fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     padding: 16px;
     margin: 0 1em 1em 0;
