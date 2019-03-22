@@ -1,11 +1,15 @@
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
 <h2>Welcome to Pizza Shop!</h2>
 
-<% @products.each do |p| %>
+<div class="row">
 
-    <p>
-        Product
-    </p>
-    
-<% end %>
+    <% @products.each do |product| %>
+    <div class="col-md-3 item">
+        <%= product.title %>
+    </div>
+    <% end %>
+</div>
 
 <button class="btn btn-primary btn-lg" onclick="something()">Click me!</button>
