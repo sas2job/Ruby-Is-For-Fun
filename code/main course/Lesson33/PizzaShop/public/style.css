@@ -5,3 +5,10 @@
     padding: 16px;
     margin: 0 1em 1em 0;
 }
+.item__content{
+    padding-bottom: 0.5em;
+}
+.item__content img {
+    border-radius: 3px;
+    width: 90%;
+}

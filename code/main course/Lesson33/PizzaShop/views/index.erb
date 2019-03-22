@@ -7,7 +7,18 @@
 
     <% @products.each do |product| %>
     <div class="col-md-3 item">
-        <%= product.title %>
+        <div class="item__content">
+            <%= product.title %>
+        </div>
+        <div class="item__content">
+            <img src="<%= product.path_to_image %>" alt="">    
+        </div>
+        <div class="item__content">
+            <%= product.description %>
+        </div> 
+        <div class="item__content">
+            <%= product.title %>
+        </div>
     </div>
     <% end %>
 </div>
