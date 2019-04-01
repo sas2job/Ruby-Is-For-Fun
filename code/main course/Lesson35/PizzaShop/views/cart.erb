@@ -36,3 +36,36 @@
     </tr>
   </tbody>
 </table>
+
+<form action="/place_order" method="POST">
+    <div class="form-group">
+      <label for="exampleInputName1">Name: </label>
+      <input
+        name="order[name]"
+        type="text"
+        class="form-control"
+        id="exampleInputName1"
+        placeholder="Your name"
+        />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPhone2">Phone: </label>
+      <input
+        name="order[phone]"
+        type="phone"
+        class="form-control"
+        id="exampleInputPhone2"
+        placeholder="Your phone"
+      />
+    </div>
+    <div class="form-group">
+            <label for="exampleInputPhone2">Delivery Address: </label>
+            <textarea
+              name="order[address]"
+              class="form-control"
+              id="exampleInputPhone2"
+              placeholder="Delivery address">
+            </textarea>
+    </div>
+    <button type="submit" class="btn btn-success btn-lg">Place this order!</button>
+    </form>
