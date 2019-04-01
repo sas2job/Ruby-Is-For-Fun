@@ -38,6 +38,8 @@
 </table>
 
 <form action="/place_order" method="POST">
+
+  <input name="order[orders_input]" type="hidden" value="<%= @orders_input %>" />
     <div class="form-group">
       <label for="exampleInputName1">Name: </label>
       <input
